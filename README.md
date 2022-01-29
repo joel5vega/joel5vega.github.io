@@ -18,6 +18,7 @@
   </a>
   
   <div >
+  <h2>Correo</h2>
   <img src="https://pnggrid.com/wp-content/uploads/2021/04/Gmail-Transparent-Logo-768x576.png" alt="gmail" width="100" />
     <h3>joel5vega@gmail.com</h3>
   </div>

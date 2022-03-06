@@ -6,7 +6,7 @@
 <p align="left"> <a href="https://twitter.com/joel5vega" target="blank"><img src="https://img.shields.io/twitter/follow/joel5vega?logo=twitter&style=for-the-badge" alt="joel5vega" /></a> </p>
 
 
-- 🔭 I’m currently working on <a href="https://joelvega.me/sishorarios/"> Sistema de Horarios</a>
+<a> 🔭 I’m currently working on </a> <a href="https://joelvega.me/sishorarios/"> Sistema de Horarios</a>
 </br>
 
 - 🌱 I’m currently learning Kubernetes, Sophos Firewall, Cloud Concepts

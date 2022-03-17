@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/joel5vega.github.io/static/css/main.073c9b0a.css",
-    "main.js": "/joel5vega.github.io/static/js/main.fa3ec579.js",
-    "static/js/787.1ed0c42c.chunk.js": "/joel5vega.github.io/static/js/787.1ed0c42c.chunk.js",
-    "static/media/logo.svg": "/joel5vega.github.io/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/joel5vega.github.io/index.html",
-    "main.073c9b0a.css.map": "/joel5vega.github.io/static/css/main.073c9b0a.css.map",
-    "main.fa3ec579.js.map": "/joel5vega.github.io/static/js/main.fa3ec579.js.map",
-    "787.1ed0c42c.chunk.js.map": "/joel5vega.github.io/static/js/787.1ed0c42c.chunk.js.map"
+    "main.css": "/src/static/css/main.073c9b0a.css",
+    "main.js": "/src/static/js/main.e6412adc.js",
+    "static/js/787.1ed0c42c.chunk.js": "/src/static/js/787.1ed0c42c.chunk.js",
+    "static/media/logo.svg": "/src/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/src/index.html",
+    "main.073c9b0a.css.map": "/src/static/css/main.073c9b0a.css.map",
+    "main.e6412adc.js.map": "/src/static/js/main.e6412adc.js.map",
+    "787.1ed0c42c.chunk.js.map": "/src/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.fa3ec579.js"
+    "static/js/main.e6412adc.js"
   ]
 }

@@ -15,7 +15,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,4 +35,26 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.container{
+  background-color: green;
+  /* overflow: hidden; */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  /* border: 10px solid black; */
+  
+  /* width: 100%; */
+}
+.tarjeta{
+  /* width: 100%; */
+  /* height: 100%; */
+  /* background-color: #282c34; */
+  /* color: white; */
+  
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  margin: 10px;
 }

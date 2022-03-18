@@ -3,6 +3,8 @@ import './App.css';
 import NavBar from './components/NavBar';
 import Redes from './components/Redes';
 import Stats from './components/Stats';
+import AboutMe from './components/AboutMe';
+import Projects from './components/Projects';
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
         <NavBar />
       </header>
       <div className='container'>
+        <AboutMe/>
+        <Projects/>
         <div >
           <Redes />
         </div>

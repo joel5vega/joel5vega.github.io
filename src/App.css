@@ -58,3 +58,18 @@
   font-size: calc(10px + 2vmin);
   margin: 10px;
 }
+.footer{
+  margin-top: 1rem ;
+  padding: 1rem;
+  background-color: rgb(235,195,64);
+  position:fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.icon{
+  width: 1rem;
+}
+.big-icon{
+  width: 5rem;
+}

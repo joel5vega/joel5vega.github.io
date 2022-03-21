@@ -1,14 +1,18 @@
 import './App.css';
+//Importar componentes
+import Home from './components/Home';
 import NavBar from './components/NavBar';
 import Stats from './components/Stats';
 import AboutMe from './components/AboutMe';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
 //React Router
+// import {render} from 'react-dom';
 import { BrowserRouter as Router, Routes,Route } from 'react-router-dom';
 function App() {
   return (
     <div className="App">
+      
 <Router>
       <header className="App-header">
         <NavBar />
@@ -17,24 +21,19 @@ function App() {
         
         <div>
           <Routes>
-          {/* <Route exact path="/project"><Projects /></Route>  */}
-          <Route
-                exact
-                path="/project"
-                render={(props) => (
-                  <Projects  />
-                )}
-              />
+          <Route path="/projects" element={<Projects/>} />
+          <Route path="/stats" element={<Stats/>} />
+          <Route path="/aboutme" element={<AboutMe/>} />
+          <Route path="/" element={<Home/>} />
           </Routes>
-        
         </div>
         
         
-        <AboutMe /> 
-        <Projects />
+        {/* <AboutMe />  */}
+        {/* <Projects /> */}
         
         <div >
-          <Stats />
+          {/* <Stats /> */}
         </div>
       <Footer />
       </div>

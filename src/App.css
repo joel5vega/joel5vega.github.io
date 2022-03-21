@@ -1,75 +1,129 @@
+
 .App {
+  margin: 0;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  color: white;
+  overflow: hidden;
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: rgb(10, 11, 6);  
+  margin: 0;
   /* min-height: 100vh; */
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  /* flex-direction: column; */
+  /* align-items: center; */
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  text-decoration: none;
+  /* position:absolute; */
+  top:0;
+}
+.panel {
+  /* background-color: rgb(10, 11, 6); */
+  padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.container{
+.container {
   /* background-color: green; */
-  /* overflow: hidden; */
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  overflow: hidden;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  /* flex-wrap: wrap; */
+  /* flex-direction: column; */
+  text-decoration: none;
   /* border: 10px solid black; */
-  
+
   /* width: 100%; */
 }
-.tarjeta{
-  /* width: 100%; */
+.tarjeta {
+  /* width: 0.5rem; */
+  /* height: 0.5rem; */
   /* height: 100%; */
   /* background-color: #282c34; */
   /* color: white; */
-  
+  text-decoration: none;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  margin: 10px;
+  /* font-size: calc(10px + 2vmin); */
+  /* margin: 10px; */
+  /* max-width: 30px; */
+  /* max-height: 200px; */
 }
-.footer{
-  margin-top: 1rem ;
-  padding: 1rem;
-  background-color: rgb(235,195,64);
-  position:fixed;
+.footer {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  /* background-color: rgb(235,195,64); */
+  position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
 }
-.icon{
-  width: 1rem;
+.icon {
+  width: 2rem;
 }
-.big-icon{
-  width: 5rem;
+.big-icon {
+  /* wth: 3rem; */
+  height: 3rem;
+  align-items: center;
+}
+
+.logo {
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  width: 2rem;
+  height: 2rem;
+}
+.enlace{
+  color: rgb(187,118,64);
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  padding-left:1rem;
+  /* text-align: center; */
+  justify-content: center;
+  align-items: center;
+}
+.enlace:active{
+  color: green;
+}
+.enlace:hover{
+  color: skyblue;
+}
+/* fondo de pantalla */
+.body {
+  overflow-y: hidden;
+  margin: 0;
+  background-image: url(images/lapaz.jpg);
+  /* reescala */
+  background-size: cover;
+  /* imagen centrada */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #282c34;
+  /* fill-rule: evenodd; */
+  height: 100vh;
+  text-decoration: none;
+}
+.perfil{
+  padding: 3rem;
+}
+.foto-perfil{
+  width: 7rem;
+  border-radius: 50%;
+  
+}
+.titulo{
+  font-size: 3rem;
+  font-weight: bolder;
+  color: rgb(255,244,202);
+}
+.subtitulo{
+  font-size: 1.5rem;
+  color: white;
 }

@@ -49,6 +49,7 @@
   text-decoration: none;
   align-items: center;
   justify-content: center;
+  max-width: 100%;
 }
 .footer {
   margin-top: 1rem;
@@ -102,7 +103,6 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: var(--negro);
-  /* fill-rule: evenodd; */
   height: 100vh;
   text-decoration: none;
 }
@@ -133,23 +133,31 @@ color:var(--normal);
   font-weight: bolder;
   color: var(--normal);
 }
-.descripcion{
+.texto-descripcion{
   font-size: 1rem;
   color: var(--claro);
-  padding: 5%;
+}
+.descripcion{
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
 }
 .opcion{
   padding-left: 10px;
 }
-.opcion:active{
+.opcion:active a{
   background-color: var(--claro);
+  color:var(--claro)
 }
 .imagen{
-  width:auto;
-  max-width: 50%;
-  /* height: auto; */
-  padding: 5%;
+  min-width: 300px;
+  max-width: 70%;
+  padding: 0.5rem;
+  object-fit: contain;
 }
-.proyecto{
-  display: inline-flex;
+.box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 1rem;
 }

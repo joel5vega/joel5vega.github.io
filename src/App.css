@@ -1,13 +1,21 @@
 
+:root{
+--negro:#323436;
+--normal:#306fb8;
+--claro:#a5cfea; 
+--blanco:#ffffff;
+}
+
 .App {
   margin: 0;
   text-align: center;
-  color: white;
+  color: normal;
   overflow: hidden;
+  font-family: 'Red Hat Display', sans-serif;
 }
 
 .App-header {
-  background-color: rgb(10, 11, 6);  
+  background-color: var(--negro);
   margin: 0;
   /* min-height: 100vh; */
   display: flex;
@@ -21,12 +29,10 @@
   top:0;
 }
 .panel {
-  /* background-color: rgb(10, 11, 6); */
   padding: 10px;
 }
 
 .container {
-  /* background-color: green; */
   overflow: hidden;
   text-align: center;
   align-items: center;
@@ -40,23 +46,13 @@
   /* width: 100%; */
 }
 .tarjeta {
-  /* width: 0.5rem; */
-  /* height: 0.5rem; */
-  /* height: 100%; */
-  /* background-color: #282c34; */
-  /* color: white; */
   text-decoration: none;
   align-items: center;
   justify-content: center;
-  /* font-size: calc(10px + 2vmin); */
-  /* margin: 10px; */
-  /* max-width: 30px; */
-  /* max-height: 200px; */
 }
 .footer {
   margin-top: 1rem;
   padding-top: 1rem;
-  /* background-color: rgb(235,195,64); */
   position: fixed;
   bottom: 0;
   left: 0;
@@ -79,7 +75,7 @@
   height: 2rem;
 }
 .enlace{
-  color: rgb(187,118,64);
+  color:var(--blanco);
   text-decoration: none;
   font-weight: bolder;
   font-size: 1.2rem;
@@ -89,23 +85,23 @@
   align-items: center;
 }
 .enlace:active{
-  color: green;
+  color: var(--claro);
 }
 .enlace:hover{
-  color: skyblue;
+  color: var(--normal);
 }
 /* fondo de pantalla */
 .body {
   overflow-y: hidden;
   margin: 0;
-  background-image: url(images/lapaz.jpg);
+  /* background-image: url(images/lapaz.jpg); */
   /* reescala */
   background-size: cover;
   /* imagen centrada */
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-color: #282c34;
+  background-color: var(--negro);
   /* fill-rule: evenodd; */
   height: 100vh;
   text-decoration: none;
@@ -121,9 +117,39 @@
 .titulo{
   font-size: 3rem;
   font-weight: bolder;
-  color: rgb(255,244,202);
+color:var(--normal);
 }
 .subtitulo{
   font-size: 1.5rem;
-  color: white;
+  color: var(--claro);
+}
+.parrafo{
+  font-size: 1.2rem;
+  color: var(--claro);
+  padding: 1%;
+}
+.titulo-descripcion{
+  font-size: 2rem;
+  font-weight: bolder;
+  color: var(--normal);
+}
+.descripcion{
+  font-size: 1rem;
+  color: var(--claro);
+  padding: 5%;
+}
+.opcion{
+  padding-left: 10px;
+}
+.opcion:active{
+  background-color: var(--claro);
+}
+.imagen{
+  width:auto;
+  max-width: 50%;
+  /* height: auto; */
+  padding: 5%;
+}
+.proyecto{
+  display: inline-flex;
 }

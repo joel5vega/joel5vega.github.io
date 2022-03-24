@@ -1,6 +1,7 @@
 
 :root{
---negro:#323436;
+/* --negro:#323436; */
+--negro:#000000;
 --normal:#306fb8;
 --claro:#a5cfea; 
 --blanco:#ffffff;
@@ -37,13 +38,13 @@
   text-align: center;
   align-items: center;
   justify-content: center;
-  display: grid;
+  display: flex;
   /* flex-wrap: wrap; */
-  /* flex-direction: column; */
+  flex-direction: row;
   text-decoration: none;
   /* border: 10px solid black; */
 
-  /* width: 100%; */
+  width: 100%;
 }
 .tarjeta {
   text-decoration: none;
@@ -129,13 +130,14 @@ color:var(--normal);
   padding: 1%;
 }
 .titulo-descripcion{
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: bolder;
   color: var(--normal);
 }
 .texto-descripcion{
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: var(--claro);
+  padding-bottom: 1rem;
 }
 .descripcion{
   display: flex;
@@ -150,8 +152,9 @@ color:var(--normal);
   color:var(--claro)
 }
 .imagen{
-  min-width: 300px;
-  max-width: 70%;
+  /* min-width: 200px; */
+  max-width: 50%;
+  max-height: 30%;
   padding: 0.5rem;
   object-fit: contain;
 }
@@ -159,5 +162,11 @@ color:var(--normal);
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
+}
+.tr{
+  color:var(--claro)
+}
+.tabla{
+  color:var(--claro)
 }

@@ -2,6 +2,7 @@
 :root{
 /* --negro:#323436; */
 --negro:#000000;
+/* --negro:#ffffff; */
 --normal:#306fb8;
 --claro:#a5cfea; 
 --blanco:#ffffff;
@@ -165,4 +166,10 @@ color:var(--normal);
 .fila{
   background-color: var(--negro);
   margin:0
+}
+.custom-tooltip{
+  color: var(--normal);
+  background-color: var(--blanco);
+  padding-inline: 1rem;
+  border-radius: 1.5rem;
 }

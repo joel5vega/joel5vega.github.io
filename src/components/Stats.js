@@ -6,7 +6,8 @@ const rescuetimeURL = "https://www.rescuetime.com/anapi/daily_summary_feed?key=B
 const Stats = () => {
 
     const [data, setData] = React.useState([]);
-    const CORS_SERVER = 'http://129.151.116.4:10000';
+    // const CORS_SERVER = 'http://129.151.116.4:10000';
+     const CORS_SERVER ="https://cors-node.azurewebsites.net:10000"
 
     React.useEffect(() => {
         axios.get(CORS_SERVER + '/' + rescuetimeURL)

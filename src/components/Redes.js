@@ -4,7 +4,7 @@ import React from "react";
 const Redes = () => {
     return (
 
-        <div className="row">
+        <div className="fila">
             <a href="https://linkedin.com/in/joel-pablo" target="blank"><img className="logo" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="linkedin" /></a>
             <a href="https://twitter.com/joel5vega" target="blank"><img className="logo" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="joel5vega" /></a>
             <a href="https://github.com/joel5vega" target="_blank" rel='noreferrer'><img className="logo"  src="github-blanco.png" alt="github" /></a>

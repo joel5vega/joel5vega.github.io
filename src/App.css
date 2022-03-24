@@ -93,7 +93,7 @@
   background-size: cover;
   /* imagen centrada */
   background-position: center center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-attachment: fixed;
   background-color: var(--negro);
   height: 100vh;
@@ -161,4 +161,8 @@ color:var(--normal);
 }
 .tabla{
   color:var(--claro)
+}
+.fila{
+  background-color: var(--negro);
+  margin:0
 }

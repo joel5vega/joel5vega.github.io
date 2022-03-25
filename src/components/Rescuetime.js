@@ -1,28 +1,38 @@
 import React from "react";
 import axios from "axios";
 // Recharts
-import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip, Legend } from "recharts";
+import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer, ComposedChart, Area } from "recharts";
+import { Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis } from 'recharts';
 //Datos de rescuetime
 const Key = "B632wU543wwlr1Aw96D0Jie8Xa806KxiKruYi9_4";
 const rescuetimeURL = "https://www.rescuetime.com/anapi/";
 const dailyURL = rescuetimeURL + "daily_summary_feed?key=" + Key + "&format=json";
-
+// get https://www.rescuetime.com/anapi/data?key={{rescuetime_api}}&resolution_time=day&perspective=rank&restrict_kind=overview&restrict_source_type=computers&interval=week&format=json
+const categoryURL = rescuetimeURL + "data?key=" + Key + "&resolution_time=day&perspective=rank&restrict_kind=overview&restrict_source_type=computers&interval=week&format=json";
 const Rescuetime = () => {
     const [daily, setDaily] = React.useState([]);
-    
+    const [category, setCategory] = React.useState([]);
+
     const CORS_SERVER = 'https://cors-anywhere.herokuapp.com/'
-    // const CORS_SERVER = 'http://localhost:8080/'    
-        React.useEffect(() => {
-            axios({
-                method: 'get',
-                url: CORS_SERVER + dailyURL,
-            }).then(res => {
-                setDaily(res.data);
-                console.log(res.data)
-            }).catch(err => { console.log("error", err) })
-    
-        }, [])
-      
+    // const CORS_SERVER = 'http://localhost:8080/'  
+    /
+    React.useEffect(() => {
+        axios({
+            method: 'get',
+            url: CORS_SERVER + dailyURL,
+        }).then(res => {
+            setDaily(res.data);
+            console.log(res.data)
+        }).catch(err => { console.log("error", err) })
+        axios({
+            method: 'get',
+            url: CORS_SERVER + categoryURL,
+        }).then(res => {
+            setCategory(res.data);
+            console.log(res.data)
+        }).catch(err => { console.log("error", err) })
+    }, [])
+
     const diario = [
         {
             "id": 1648018800,
@@ -940,6 +950,77 @@ const Rescuetime = () => {
             "utilities_duration_formatted": "33m 33s"
         }
     ]
+    const categoria = {
+        "notes": "data is an array of arrays (rows), column names for rows in row_headers",
+        "row_headers": [
+            "Rank",
+            "Time Spent (seconds)",
+            "Number of People",
+            "Category"
+        ],
+        "rows": [
+            [
+                1,
+                35132,
+                1,
+                "Software Development"
+            ],
+            [
+                2,
+                22626,
+                1,
+                "Utilities"
+            ],
+            [
+                3,
+                3959,
+                1,
+                "Reference & Learning"
+            ],
+            [
+                4,
+                2046,
+                1,
+                "Business"
+            ],
+            [
+                5,
+                1295,
+                1,
+                "Uncategorized"
+            ],
+            [
+                6,
+                690,
+                1,
+                "Design & Composition"
+            ],
+            [
+                7,
+                625,
+                1,
+                "Social Networking"
+            ],
+            [
+                8,
+                378,
+                1,
+                "News & Opinion"
+            ],
+            [
+                9,
+                138,
+                1,
+                "Communication & Scheduling"
+            ],
+            [
+                10,
+                122,
+                1,
+                "Entertainment"
+            ]
+        ]
+    }
     function convertirFecha(fechaString) {
         var fechaSp = fechaString.split("-");
         var anio = fechaSp[2];
@@ -949,30 +1030,48 @@ const Rescuetime = () => {
         return new Date(anio, mes, dia);
     }
 
-    if (daily.length===0){
+    if (daily.length === 0) {
         console.log("usando datos del recuerdo")
         setDaily(diario)
     }
-    
-        console.log(daily.sort(function (a, b) {
-            return convertirFecha(a.date) - convertirFecha(b.date);
-        }));
+    if (category.length === 0) {
+        console.log("usando datos del recuerdo overview")
+        setCategory(categoria.rows)
+    }
+    // console.log(weekly)
+    var categoryData = []
+    category.map((row) => {
+        var dato ={};
+        dato.horas = row[1] /3600;
+        dato.categoria = row[3];
+        dato.rank=row[0];
+        if(dato.horas>0.6){
+        categoryData.push(dato)
+        }
+       
+    }
+    )
+    console.log(categoryData)
+    daily.sort(function (a, b) {
+        return convertirFecha(a.date) - convertirFecha(b.date);
+    });
     function CustomTooltip({ active, payload, label }) {
         if (active) {
-            var horas =daily.find(el=>el.date===label).total_duration_formatted;
+            var horas = daily.find(el => el.date === label).total_duration_formatted;
+            var productividad = daily.find(el => el.date === label).productivity_pulse;
             return (
                 <div className="custom-tooltip">
                     <p className="descripcion">{`${label}`}</p>
                     <p className="label">{`Work hours: ${horas} `}</p>
-                    <p className="label">{` Performance: ${payload[0].value}%`}</p>
+                    <p className="label">{` Performance: ${productividad}%`}</p>
                 </div>
             );
         }
 
         return null;
     }
-    const getDateDay = (date,locale) => {
-        if (!locale) locale='en-US';
+    const getDateDay = (date, locale) => {
+        if (!locale) locale = 'en-US';
         var date = new Date(date);
         var dia = date.toLocaleString(locale, { weekday: 'short' });
         // console.log(dia)
@@ -980,23 +1079,46 @@ const Rescuetime = () => {
         // var month = date.getMonth() + 1;
         return `${dia}`;
     }
+    const porcentaje = (valor) => {
+        return `${valor}%`
+    }
+    const hrs = (valor) => {
+        return `${valor}h`
+    }
 
     return (
-        <div className="texto-descripcion">
-            <div className="box">
-                <div className='titulo-descripcion'>Week Productivity  </div>
-                <div className='box'>
-                    <LineChart width={600} height={400} data={daily}>
-                        <Line type="monotone" dataKey="productivity_pulse" stroke="#306fb8" />
-                        <CartesianGrid stroke="#fffff" />
-                        <XAxis dataKey="date"  angle={270} tickFormatter={getDateDay} stroke="#306fb8" />
-                        <YAxis datakey="productivity_pulse" name="productividad" type="number" domain={[50, 100]} stroke="#306fb8" />
-                        <Tooltip content={<CustomTooltip/>}/>
-                        {/* <Legend overlinePosition={-1} /> */}
-                    </LineChart>
-
-                </div>
-            </div>
+        <div>
+            <div className='titulo-descripcion'>Week Productivity  </div>
+            <ResponsiveContainer minWidth={250} minHeight={200} maxWidth={"60%"}>
+                <ComposedChart width={500}
+                    height={400}
+                    data={daily}
+                    margin={{
+                        top: 20,
+                        right: 20,
+                        bottom: 20,
+                        left: 20,
+                    }}>
+                    {/* <LineChart data={daily}> */}
+                    <Line yAxisId="right" type="monotone" dataKey="total_hours" stroke="#a5cfea" />
+                    <CartesianGrid stroke="#f5f5f5" />
+                    <Area type="monotone" dataKey="productivity_pulse" fill="#306fb8" stroke="#306fb8" />
+                    <XAxis dataKey="date" angle={0} tickFormatter={getDateDay} stroke="#ffffff" />
+                    <YAxis datakey="productivity_pulse" name="productividad" type="number" domain={[0, 100]} stroke="#306fb8" scale={"auto"} tickFormatter={porcentaje} />
+                    <YAxis yAxisId="right" orientation="right" datakey="total_hours" name="horas" type="number" domain={[0, 24]} stroke="#a5cfea" scale={"auto"} tickFormatter={hrs} />
+                    <Tooltip content={<CustomTooltip />} />
+                    <Legend overlinePosition={-1} />
+                    {/* </LineChart> */}
+                </ComposedChart>
+            </ResponsiveContainer>
+            <ResponsiveContainer minWidth={250} minHeight={200} maxWidth={"60%"}>
+                <RadarChart cx="50%" cy="50%" outerRadius="80%" data={categoryData}>
+                    <PolarGrid />
+                    <PolarAngleAxis dataKey="categoria"stroke="#ffffff" />
+                    <PolarRadiusAxis stroke="#ffffff"/>
+                    <Radar name="Mike" dataKey="horas" stroke="#8884d8" fill="#306fb8" fillOpacity={0.6} />
+                </RadarChart>
+            </ResponsiveContainer>
         </div>
     );
 }

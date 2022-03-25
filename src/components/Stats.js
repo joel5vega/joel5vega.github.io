@@ -25,9 +25,8 @@ const Stats = () => {
     return (
         <div >
             <div className="container">
-                <div className="box">
+                
                     <Rescuetime />
-                </div>
 
                 <div className="box">
                     <div className='box'><img src="https://github-readme-stats.vercel.app/api/top-langs?username=joel5vega&show_icons=true&locale=en&layout=compact&theme=dark" alt="joel5vega" /></div>

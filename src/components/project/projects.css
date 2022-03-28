@@ -1,0 +1,30 @@
+.more-info {
+  display: flex;
+  gap: 0.8rem;
+  justify-content: center;
+}
+.imagen {
+    width: 50%;
+    height: 30%;
+    border-radius: 1rem;
+  }
+  .proyecto{
+      display: flex;
+      flex-direction: row;
+  }
+/*    MEDIA Queries (medium)*/
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container-width-md);
+  }
+  section {
+    margin-top: 6rem;
+  }
+  .proyecto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  
+}

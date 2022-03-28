@@ -1,0 +1,72 @@
+header {
+  height: 100vh;
+  padding-top: 7rem;
+  overflow: hidden;
+}
+
+.header__container {
+  text-align: center;
+  height: 100%;
+  position: relative;
+}
+
+/*    CALL TO ACTION*/
+.cta {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1.3rem;
+  justify-content: center;
+}
+
+/*    Header socials*/
+.header__socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  position: absolute;
+  right: 0;
+  bottom: 10rem;
+}
+.header__socials::after {
+  content: "";
+  width: 1px;
+  height: 1rem;
+  background-color: var(--color-primary);
+}
+
+/* Foto de perfil*/
+.me {
+}
+.foto-perfil {
+  width: 7rem;
+  border-radius: 50%;
+}
+
+/* scroll down*/
+.scroll__down {
+  position: absolute;
+  left: -2.3rem;
+  bottom: 12rem;
+  transform: rotate(90deg);
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+/*    MEDIA Queries (medium)*/
+@media screen and (max-width: 1024px) {
+  .container {
+    /* background-color: red; */
+  }
+  header{height: 68vh;}
+}
+/*    MEDIA Queries (small)*/
+@media screen and (max-width: 600px) {
+  header{
+      height: 100vh;
+  }
+
+  .header__socials, .scroll__down{
+    display: none;
+  }
+}

@@ -2,7 +2,7 @@ import './App.css';
 //Importar componentes
 import Home from './components/home/Home';
 import NavBar from './components/navbar/NavBar';
-import Stats from './components/Stats';
+import Stats from './components/stats/Stats';
 import AboutMe from './components/about/AboutMe';
 import Projects from './components/project/Projects';
 import Footer from './components/Footer';
@@ -14,10 +14,12 @@ function App() {
       <div className='body'>
         <Home/>
         <NavBar />
-        <AboutMe />
+        
         <Projects />
         <Stats />
+        <AboutMe />
         <Footer />
+        
       </div>
     </div>
   );

@@ -1,0 +1,120 @@
+.about__container {
+  display: grid;
+  grid-template-columns: 35% 60%;
+  gap: 5%;
+}
+
+.about__me {
+  aspect-ratio: 2 / 1;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin-bottom: 3rem;
+}
+.about__me-img {
+  border-radius: 3rem;
+  max-width: 100%;
+}
+.about__me-img:hover {
+  transform: rotate(-10deg);
+  transition: var(--transition);
+}
+
+.about__content {
+  /* display: flex; */
+  /* flex-direction: column; */
+  text-align: center;
+}
+h2 {
+  margin-bottom: 0.5rem;
+  /* background-color: aliceblue; */
+}
+.about__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.about__card {
+  background: var(--color-bg-variant);
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.about__card:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+  cursor: default;
+}
+
+.about__icon {
+  color: var(--color-primary);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.about__card h5 {
+  font-size: 0.95rem;
+}
+
+.about__card small {
+  font-size: 0.8rem;
+  color: var(--color-light);
+}
+
+.about__content p {
+  color: var(--color-light);
+  margin: 2rem 0 2.6rem;
+}
+
+/*    MEDIA Queries (medium)*/
+@media screen and (max-width: 1024px) {
+  .about__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .about__me {
+    width: 50%;
+    margin: 2rem auto;
+    max-height: 50%;
+  }
+
+  .about__content p {
+    margin: 1rem 0 1.5rem;
+  }
+}
+/*    MEDIA Queries (small)*/
+@media screen and (max-width: 600px) {
+  .about__me {
+    width: 35%;
+    margin: auto;
+  }
+  .about__container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .about__content {
+    width: 100%;
+    align-items: center;
+  }
+  .about__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.6rem;
+  }
+  .about__card {
+    /* max-width: 100px; */
+    max-height: 75px;
+  }
+  .about__content p {
+    margin: 1.5rem 0;
+  }
+  .about__icon {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+}

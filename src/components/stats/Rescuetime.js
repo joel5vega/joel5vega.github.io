@@ -994,7 +994,8 @@ const Rescuetime = () => {
     const [daily, setDaily] = React.useState([]);
     const [category, setCategory] = React.useState([]);
 
-     const CORS_SERVER = 'https://cors-anywhere.herokuapp.com/'
+      const CORS_SERVER = 'https://cors-anywhere.herokuapp.com/'
+    
     // const CORS_SERVER = 'http://localhost:8080/'
 
     React.useEffect(() => {
@@ -1080,8 +1081,8 @@ const Rescuetime = () => {
     }
 
     return (
-        <div>
-            <div className='titulo-descripcion'>Week Productivity  </div>
+        <div className="stats__container">
+            <h2>Week Productivity  </h2>
             <ResponsiveContainer minWidth={250} minHeight={200} maxWidth={"60%"}>
                 <ComposedChart width={500}
                     height={400}

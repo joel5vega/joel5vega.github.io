@@ -19,7 +19,7 @@ const Home = () => {
                 
                 <Redes />
                 
-                <a href="#contact" className='scroll__down'>Scroll Down</a>
+                {/* <a href="#contact" className='scroll__down'>Scroll Down</a> */}
                 
             </div>
 
@@ -30,3 +30,4 @@ const Home = () => {
 
 }
 export default Home;
+

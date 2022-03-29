@@ -1,5 +1,6 @@
 .stats__container{
     width: auto;
-    height: 100vh;
-    background: red;
+    /* height: 100vh; */
+    /* background: red; */
+    align-items: center;
 }

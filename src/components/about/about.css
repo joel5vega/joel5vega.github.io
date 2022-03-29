@@ -2,8 +2,13 @@
   display: grid;
   grid-template-columns: 35% 60%;
   gap: 5%;
+  margin-bottom: 5rem;
 }
-
+.redes{
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
 .about__me {
   aspect-ratio: 2 / 1;
   border-radius: 50%;

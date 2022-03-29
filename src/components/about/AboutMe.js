@@ -36,6 +36,7 @@ const AboutMe = () => {
                     I am an electronic engineer passionate about technology, and education!
                     <br></br>  joel5vega@gmail.com
                     </p>
+                    <Redes/>
                     {/* <a href="#contact" className="btn btn-primary">Contact Me</a> */}
                 </div>
             </div>

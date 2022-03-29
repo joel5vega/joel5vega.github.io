@@ -4,6 +4,7 @@ import { Navbar, Nav, Container, NavLink } from 'react-bootstrap'
 import { GrHomeRounded } from "react-icons/gr";
 import { AiOutlineHome,AiOutlineUser } from "react-icons/ai";
 import { BiBook,BiMessageSquareDetail} from "react-icons/bi";
+import {MdWork} from "react-icons/md";
 import { RiServiceLine,} from "react-icons/ri";
 import {ImStatsDots} from "react-icons/im";
 import { useState } from 'react';
@@ -14,6 +15,7 @@ const NavBar = () => {
     return (
         <nav>
              <a href="#" onClick={()=>setActiveNav('#')}className={activeNav==='#'?'active':''}><AiOutlineHome/></a>
+             <a href="#experience" onClick={()=>setActiveNav('#experience')} className={activeNav==='#experience'?'active':''}><MdWork/></a>
              <a href="#projects" onClick={()=>setActiveNav('#projects')} className={activeNav==='#projects'?'active':''}><BiBook/></a>
                 <a href="#stats" onClick={()=>setActiveNav('#stats')} className={activeNav==='#stats'?'active':''}><ImStatsDots/></a>
                 <a href="#about" onClick={()=>setActiveNav('#about')} className={activeNav==='#about'?'active':''}><AiOutlineUser/></a>

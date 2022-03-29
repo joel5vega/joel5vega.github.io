@@ -5,7 +5,8 @@ import { BsGithub, BsTwitter, BsFacebook, BsInstagram } from "react-icons/bs";
 // import { Link } from "react-router-dom";
 const Redes = () => {
     return (
-        <div className="header__socials">
+        // <div className="header__socials">
+        <div className="redes">
             <a href="https://linkedin.com/in/joel-pablo" target="_blank"rel='noreferrer'><FaLinkedinIn /></a>
             <a href="https://twitter.com/joel5vega" target="_blank"rel='noreferrer'><BsTwitter /></a>
             <a href="https://github.com/joel5vega" target="_blank" rel='noreferrer'><BsGithub /></a>

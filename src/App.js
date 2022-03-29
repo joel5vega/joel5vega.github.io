@@ -5,6 +5,7 @@ import NavBar from './components/navbar/NavBar';
 import Stats from './components/stats/Stats';
 import AboutMe from './components/about/AboutMe';
 import Projects from './components/project/Projects';
+import Experience from './components/experience/Experience';
 import Footer from './components/Footer';
 // import {render} from 'react-dom';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -14,7 +15,7 @@ function App() {
       <div className='body'>
         <Home/>
         <NavBar />
-        
+        <Experience/>
         <Projects />
         <Stats />
         <AboutMe />

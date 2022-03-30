@@ -26,8 +26,8 @@
   color: var(--color-primary);
 }
 .experience__content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   row-gap: 0.5rem;
 }
 
@@ -48,6 +48,6 @@
   }
 
 .experience__container > div {
-    width:80%;
+    width:90%;
 }
 }

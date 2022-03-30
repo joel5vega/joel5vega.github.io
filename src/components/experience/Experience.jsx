@@ -12,6 +12,7 @@ const Experience = () => {
       <div className="container experience__container">
         <div className="experience__item">
           <h3>IT Ops engineer</h3>
+          <h5>+5 years of experience</h5>
           <div className="experience__content">
             <article className="experience__details">
               <FaLinux className="experience__details-icons" />

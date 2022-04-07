@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import Redes from "../home/Redes"
 import "./contact.css"
 
 import { HiMail } from "react-icons/hi";
@@ -60,6 +61,7 @@ function Contact() {
           />
           <input className="boton" type="submit" value="Send" required />
         </form>
+        <Redes/>
       </div>
     </section>
   );

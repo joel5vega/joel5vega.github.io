@@ -1,11 +1,13 @@
 .carrusel {
   background-color: var(--color-primary);
-  max-width: 50%;
+  /* max-width: 50%; */
 }
 .faceta__container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap:1rem;
+  gap:0.5rem;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 .faceta {
   background-color: var(--color-bg-variant);
@@ -167,5 +169,12 @@ h2 {
   .about__icon {
     font-size: 1.2rem;
     margin: 0;
+  }
+}
+@media screen and (min-width: 600px) {
+  .faceta__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:1rem;
   }
 }

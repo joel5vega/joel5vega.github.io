@@ -1,6 +1,15 @@
-.stats__container{
-    width: auto;
-    /* height: 100vh; */
-    /* background: red; */
-    align-items: center;
+.stats__container {
+  width: auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.stats__imagen {
+  width: 50%;
+  height: auto;
+  /* object-fit: cover; */
+  align-self: center;
+  justify-self: center;
 }

@@ -1,9 +1,9 @@
 import "./experience.css";
 import { FaLinux } from "react-icons/fa";
 import { GiArchiveResearch } from "react-icons/gi";
-import {FiPenTool} from 'react-icons/fi';
-import {GrDocumentPerformance} from 'react-icons/gr';
-
+import { FiPenTool } from "react-icons/fi";
+import { GrDocumentPerformance } from "react-icons/gr";
+import {FcDocument} from 'react-icons/fc'
 const Experience = () => {
   return (
     <section id="experience">
@@ -15,18 +15,23 @@ const Experience = () => {
           <h5>+5 years of experience</h5>
           <div className="experience__content">
             <article className="experience__details">
-              <FaLinux className="experience__details-icons" />
               <div>
-                <h4>Linux </h4>
+                <h4>
+                  {" "}
+                  <FaLinux className="experience__details-icons" />
+                   Linux{" "}
+                </h4>
                 <small className="text-light">
-                  Managing critical linux servers
+                   Managing critical linux servers
                 </small>
               </div>
             </article>
             <article className="experience__details">
-              <GiArchiveResearch className="experience__details-icons" />
               <div>
-                <h4>Log analysis</h4>
+                <h4>
+                  <GiArchiveResearch className="experience__details-icons" />
+                  Log analysis
+                </h4>
                 <small className="text-light">
                   Proactive analysis of logs.
                 </small>
@@ -34,20 +39,25 @@ const Experience = () => {
               </div>
             </article>
             <article className="experience__details">
-              <FiPenTool className="experience__details-icons" />
               <div>
-                <h4>Implementation</h4>
+                <h4>
+                <FiPenTool className="experience__details-icons" />
+                  Implementation
+                </h4>
                 <small className="text-light">
-                  Implementation of multiple technology solutions:
+                   Implementation of multiple technology solutions:
                   <br></br>
-                  Red Hat Enterprise Virtualization. Oracle Linux Manager. RH Satellite.
+                  Red Hat Enterprise Virtualization. Oracle Linux Manager. RH
+                  Satellite.
                 </small>
               </div>
             </article>
             <article className="experience__details">
-              <GrDocumentPerformance className="experience__details-icons" />
               <div>
-                <h4>Technical documentation</h4>
+                <h4>
+                  <FcDocument className="experience__details-icons" />
+                   Technical documentation
+                </h4>
                 <small className="text-light">
                   Documenting infrastructure implementations.
                 </small>

@@ -1,13 +1,7 @@
-header {
-  /* height: 100vh; */
-  padding-top: 2rem;
-  overflow: hidden;
-}
-
 .header__container {
   text-align: center;
-  height: 100%;
-  position: relative;
+  min-height: 100vh;
+  /* position: relative; */
 }
 
 /*    CALL TO ACTION*/
@@ -36,8 +30,7 @@ header {
 }
 
 /* Foto de perfil*/
-.me {
-}
+
 .foto-perfil {
   width: 7rem;
   border-radius: 50%;
@@ -69,7 +62,7 @@ header {
   .container {
     /* background-color: red; */
   }
-  header{height: 68vh;}
+  header{height: 100vh;}
 }
 /*    MEDIA Queries (small)*/
 @media screen and (max-width: 600px) {

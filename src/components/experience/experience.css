@@ -1,7 +1,10 @@
 .experience__container {
+  /* padding-top: 2rem; */
   display: grid;
+  align-items: center;
   grid-template-columns: 1fr;
   gap: 1rem;
+  /* min-height: 100vh; */
 }
 
 .experience__container > div {
@@ -24,7 +27,10 @@
   text-align: center;
   margin-bottom: 1rem;
   color: var(--color-primary);
+  display: flex;
+  gap: 1rem;
 }
+
 .experience__content {
   display: flex;
   flex-direction: column;
@@ -35,7 +41,13 @@
   display: flex;
   gap: 0.5rem;
 }
-
+.experience__details h4{
+  color: var(--color-primary);
+  display: flex;
+  gap:1rem;
+  justify-content: left;
+  align-items: center;
+}
 .experience__details-icon {
   margin-top: 6px;
   color: var(--color-primary);

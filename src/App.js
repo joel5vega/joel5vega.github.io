@@ -6,22 +6,23 @@ import Stats from './components/stats/Stats';
 import AboutMe from './components/about/AboutMe';
 import Projects from './components/project/Projects';
 import Experience from './components/experience/Experience';
+import Education from './components/education/Education';
 import Footer from './components/Footer';
+import Contact from './components/contact/Contact';
 // import {render} from 'react-dom';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 function App() {
   return (
-    <div className="App">
-      <div className='body'>
-        <Home/>
-        <NavBar />
-        <Experience/>
-        <Projects />
-        <Stats />
-        <AboutMe />
-        <Footer />
-        
-      </div>
+    <div className='body'>
+      <Home />
+      <NavBar />
+      <Education />
+      <Experience />
+      <Projects />
+      <Stats />
+      <AboutMe />
+      <Contact/>
+      <Footer />
+
     </div>
   );
 }

@@ -20,8 +20,8 @@ const Rescuetime = () => {
     const [daily, setDaily] = React.useState([]);
     const [category, setCategory] = React.useState([]);
 
-      const CORS_SERVER = 'https://cors-anywhere.herokuapp.com/'
-    
+    const CORS_SERVER = 'https://cors-anywhere.herokuapp.com/'
+
     // const CORS_SERVER = 'http://localhost:8080/'
 
     React.useEffect(() => {
@@ -58,13 +58,17 @@ const Rescuetime = () => {
         return new Date(anio, mes, dia);
     }
     var categoryData = []
-
+    //ordenar los dias de la semana
+    daily.sort((a, b) => (convertirFecha(a.date).mes - convertirFecha(b.date)) ? 1 : -1)
+    var dailyO=daily.sort((a, b) => (convertirFecha(a.date) - convertirFecha(b.date)) ? 1 : -1)
+    console.log("daily",dailyO)
+///
     category.map(function (row) {
         var dato = {};
         dato.horas = row[1] / 3600;
         dato.categoria = row[3];
         dato.rank = row[0];
-        if (dato.horas > 6) {
+        if (dato.horas > 7) {
             categoryData.push(dato)
         }
         return categoryData
@@ -72,13 +76,14 @@ const Rescuetime = () => {
     )
     console.log("datos limpios", categoryData)
 
-    daily.sort(function (a, b) {
-        return convertirFecha(a.date) - convertirFecha(b.date);
-    });
+    // daily.sort(function (a, b) {
+    //     return convertirFecha(a.date) - convertirFecha(b.date);
+    // });
+    //On click info
     function CustomTooltip({ active, payload, label }) {
         if (active) {
-            var horas = daily.find(el => el.date === label).all_productive_duration_formatted;
-            var productividad = daily.find(el => el.date === label).productivity_pulse;
+            var horas = dailyO.find(el => el.date === label).all_productive_duration_formatted;
+            var productividad = dailyO.find(el => el.date === label).productivity_pulse;
             return (
                 <div className="custom-tooltip">
                     <p className="descripcion">{`${label}`}</p>
@@ -90,9 +95,10 @@ const Rescuetime = () => {
 
         return null;
     }
+    // Obtener la fecha
     const getDateDay = (date, locale) => {
         if (!locale) locale = 'en-US';
-        var date = new Date(date);
+        // var date = new Date(date);
         var dia = date.toLocaleString(locale, { weekday: 'short' });
         // console.log(dia)
         // var day = date.getDate();
@@ -113,7 +119,7 @@ const Rescuetime = () => {
             <ResponsiveContainer minWidth={250} minHeight={200} maxWidth={"60%"}>
                 <ComposedChart width={500}
                     height={400}
-                    data={daily}
+                    data={dailyO}
                     margin={{
                         top: 20,
                         right: 20,
@@ -135,7 +141,7 @@ const Rescuetime = () => {
             <h2>Principal categories </h2>
             <h5>Hours/month</h5>
             {categoryData.length > 1 &&
-            
+
                 <ResponsiveContainer minWidth={250} minHeight={200} maxWidth={"60%"}>
                     <RadarChart cx="50%" cy="50%" outerRadius="80%" data={categoryData}>
                         <PolarGrid />

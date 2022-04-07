@@ -29,6 +29,7 @@ function Contact() {
   };
   return (
     <section id="contact">
+      <h2>Let's talk!</h2>
       <div className="contact__container">
         <div className="contact__cta">
           <div className="contact__item">

@@ -170,6 +170,9 @@ h2 {
     font-size: 1.2rem;
     margin: 0;
   }
+  .btn{
+    margin-bottom:0.4rem;
+  }
 }
 @media screen and (min-width: 600px) {
   .faceta__container {

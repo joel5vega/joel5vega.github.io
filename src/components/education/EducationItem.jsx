@@ -3,7 +3,7 @@ import React from "react";
 function EducationItem(props) {
   const { name, description, link } = props.data;
   return (
-    <div className="education__item">
+    <div key={link} className="education__item">
       <a href={link}>
         {props.logo} {name}
       </a>

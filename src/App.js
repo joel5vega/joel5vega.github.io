@@ -7,7 +7,7 @@ import AboutMe from './components/about/AboutMe';
 import Projects from './components/project/Projects';
 import Experience from './components/experience/Experience';
 import Education from './components/education/Education';
-import Footer from './components/Footer';
+import Footer from './components/footer/Footer';
 import Contact from './components/contact/Contact';
 // import {render} from 'react-dom';
 function App() {

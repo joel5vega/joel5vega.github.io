@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 // Recharts
-import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer, ComposedChart, Area } from "recharts";
+import { Line, CartesianGrid, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer, ComposedChart, Area } from "recharts";
 import { Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis } from 'recharts';
 //Datos de rescuetime
 ///static
@@ -34,7 +34,7 @@ const Rescuetime = () => {
         }).catch(err => {
             console.log("error", err)
             console.log("usando datos daily del recuerdo")
-            setDaily(diario)
+            setDaily(ordenar(diario))
         })
         axios({
             method: 'get',
@@ -59,9 +59,17 @@ const Rescuetime = () => {
     }
     var categoryData = []
     //ordenar los dias de la semana
-    daily.sort((a, b) => (convertirFecha(a.date).mes - convertirFecha(b.date)) ? 1 : -1)
-    var dailyO=daily.sort((a, b) => (convertirFecha(a.date) - convertirFecha(b.date)) ? 1 : -1)
-    console.log("daily",dailyO)
+    function ordenar(diario){
+        var orden= diario.sort((a, b) => (convertirFecha(a.date).mes - convertirFecha(b.date)) ? 1 : -1)
+        // var reverse=orden.reverse()
+        console.log("orden:",orden)
+        // setDaily(orden)
+        return orden;
+    }
+
+    
+    // console.log("dayli00",daily)
+    // var dailyO=daily.sort((a, b) => (convertirFecha(a.date) - convertirFecha(b.date)) ? 1
 ///
     category.map(function (row) {
         var dato = {};
@@ -74,16 +82,13 @@ const Rescuetime = () => {
         return categoryData
     }
     )
-    console.log("datos limpios", categoryData)
+    // console.log("datos limpios", categoryData)
 
-    // daily.sort(function (a, b) {
-    //     return convertirFecha(a.date) - convertirFecha(b.date);
-    // });
-    //On click info
+   
     function CustomTooltip({ active, payload, label }) {
         if (active) {
-            var horas = dailyO.find(el => el.date === label).all_productive_duration_formatted;
-            var productividad = dailyO.find(el => el.date === label).productivity_pulse;
+            var horas = daily.find(el => el.date === label).all_productive_duration_formatted;
+            var productividad = daily.find(el => el.date === label).productivity_pulse;
             return (
                 <div className="custom-tooltip">
                     <p className="descripcion">{`${label}`}</p>
@@ -119,29 +124,26 @@ const Rescuetime = () => {
             <ResponsiveContainer minWidth={250} minHeight={200} maxWidth={"60%"}>
                 <ComposedChart width={500}
                     height={400}
-                    data={dailyO}
+                    data={daily}
                     margin={{
                         top: 20,
                         right: 20,
                         bottom: 20,
                         left: 20,
                     }}>
-                    {/* <LineChart data={daily}> */}
                     <Line yAxisId="right" type="monotone" dataKey="total_hours" stroke="#a5cfea" />
                     <CartesianGrid stroke="#f5f5f5" />
                     <Area type="monotone" dataKey="productivity_pulse" fill="#306fb8" stroke="#306fb8" />
-                    <XAxis dataKey="date" angle={0} tickFormatter={getDateDay} stroke="#ffffff" />
+                    <XAxis dataKey="date" angle={270} tickFormatter={getDateDay} stroke="#ffffff" />
                     <YAxis datakey="productivity_pulse" name="productividad" type="number" domain={[0, 100]} stroke="#306fb8" scale={"auto"} tickFormatter={porcentaje} />
                     <YAxis yAxisId="right" orientation="right" datakey="total_hours" name="horas" type="number" domain={[0, 24]} stroke="#a5cfea" scale={"auto"} tickFormatter={hrs} />
                     <Tooltip content={<CustomTooltip />} />
                     <Legend overlinePosition={-1} />
-                    {/* </LineChart> */}
                 </ComposedChart>
             </ResponsiveContainer>
             <h2>Principal categories </h2>
             <h5>Hours/month</h5>
             {categoryData.length > 1 &&
-
                 <ResponsiveContainer minWidth={250} minHeight={200} maxWidth={"60%"}>
                     <RadarChart cx="50%" cy="50%" outerRadius="80%" data={categoryData}>
                         <PolarGrid />

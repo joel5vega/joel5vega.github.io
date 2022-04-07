@@ -1,13 +1,13 @@
 .stats__container {
-  width: auto;
+  /* width: auto; */
   align-items: center;
   justify-content: center;
   text-align: center;
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
 }
 .stats__imagen {
-  width: 50%;
+  /* width: 50%; */
   height: auto;
   /* object-fit: cover; */
   align-self: center;

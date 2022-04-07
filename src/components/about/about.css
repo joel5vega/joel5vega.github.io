@@ -1,3 +1,51 @@
+.carrusel {
+  background-color: var(--color-primary);
+  max-width: 50%;
+}
+.faceta__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap:1rem;
+}
+.faceta {
+  background-color: var(--color-bg-variant);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 2px solid var(--color-primary);
+  max-width: 300px;
+  border-radius: 1rem;
+}
+.faceta h5{
+  font-size: 1.4rem;
+  align-items: center;
+  display: flex;
+  gap:1rem;
+  padding: 0.5rem;
+}
+.description {
+  padding: 0.2rem auto;
+  text-align: center;
+  font-size: 0.8rem;
+  /* color:var(--color-bg) */
+}
+.photo {
+  /* overflow: hidden; */
+  height: auto;
+  max-width: 250px;
+  /* width: 500px; */
+  border-radius: 1rem;
+}
+
+.place{
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  color:var(--color-light);
+  padding:0;
+}
 .about__container {
   display: grid;
   flex-direction: column;
@@ -6,7 +54,7 @@
   gap: 5%;
   margin-bottom: 5rem;
 }
-.redes{
+.redes {
   display: flex;
   gap: 1rem;
   justify-content: center;

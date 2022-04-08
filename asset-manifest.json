@@ -1,20 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.f5a8747b.css",
-    "main.js": "/static/js/main.f0cf2c09.js",
+    "main.css": "/static/css/main.c765308b.css",
+    "main.js": "/static/js/main.31b4ed3f.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
-    "static/media/susi.jpg": "/static/media/susi.54bce8dba44a2c994e11.jpg",
-    "static/media/china.jpg": "/static/media/china.ea9ac998726695229a38.jpg",
-    "static/media/canaan.jpg": "/static/media/canaan.326db9ed65243e89733d.jpg",
-    "static/media/xa-2016.JPG": "/static/media/xa-2016.f2fe593a643c85c3e083.JPG",
-    "static/media/xa.jpg": "/static/media/xa.2c00db8cd61ef519c98d.jpg",
+    "static/media/logo-qtm.png": "/static/media/logo-qtm.a7f372d31beb2e6dd778.png",
+    "static/media/logo-canaan.png": "/static/media/logo-canaan.cc8b98e870ec4f2c4589.png",
+    "static/media/logo-xa.png": "/static/media/logo-xa.bde40647eb6e536fcf0f.png",
+    "static/media/xa.png": "/static/media/xa.3a0c14ba2afa9f2b06a1.png",
+    "static/media/xa-2016.png": "/static/media/xa-2016.ca02e963fb574200eed1.png",
+    "static/media/canaan.png": "/static/media/canaan.e29919f6c922f1ae299b.png",
+    "static/media/susi.png": "/static/media/susi.0f30e9d878426782ec43.png",
+    "static/media/joel.png": "/static/media/joel.90326c5ebdb4bcdb84bd.png",
+    "static/media/china.png": "/static/media/china.7ef5d72d1b72ef0cd6f0.png",
     "index.html": "/index.html",
-    "main.f5a8747b.css.map": "/static/css/main.f5a8747b.css.map",
-    "main.f0cf2c09.js.map": "/static/js/main.f0cf2c09.js.map",
+    "main.c765308b.css.map": "/static/css/main.c765308b.css.map",
+    "main.31b4ed3f.js.map": "/static/js/main.31b4ed3f.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f5a8747b.css",
-    "static/js/main.f0cf2c09.js"
+    "static/css/main.c765308b.css",
+    "static/js/main.31b4ed3f.js"
   ]
 }

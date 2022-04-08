@@ -17,7 +17,7 @@
   flex-wrap: wrap;
   align-items: center;
   border: 2px solid var(--color-primary);
-  max-width: 300px;
+  max-width: 256px;
   border-radius: 1rem;
 }
 .faceta h5{
@@ -44,7 +44,7 @@
 .place{
   display: flex;
   align-items: center;
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   color:var(--color-light);
   padding:0;
 }
@@ -169,15 +169,28 @@ h2 {
   .about__icon {
     font-size: 1.2rem;
     margin: 0;
+    max-width: 25px;
+    overflow: hidden;
   }
+  
   .btn{
-    margin-bottom:0.4rem;
+    margin-bottom:0.5rem;
   }
 }
 @media screen and (min-width: 600px) {
   .faceta__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    /* grid-template-columns: 1fr 1fr 1fr; */
     gap:1rem;
   }
+  .btn{
+    margin-bottom:1rem;
+  }
+  .about__icon {
+    font-size: 1.2rem;
+    margin: 0;
+    max-width: 25px;
+    overflow: hidden;
+  }
+  
 }

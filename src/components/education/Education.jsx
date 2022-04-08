@@ -56,7 +56,9 @@ function Education() {
           <h5>Operating Systems</h5>
           <div className="education__content">
             {DataEducation.OS.map((item) => (
+              <div key={item.id}>
               <EducationItem logo={iconObj[item.icon]} data={item} />
+              </div>
             ))}
           </div>
         </div>
@@ -67,7 +69,9 @@ function Education() {
           </h5>
           <div className="education__content">
             {DataEducation.Cloud.map((item) => (
+              <div key={item.id}>
               <EducationItem logo={iconObj[item.icon]} data={item} />
+              </div>
             ))}
           </div>
         </div>
@@ -75,7 +79,9 @@ function Education() {
           <h5>IT Infrastructure</h5>
           <div className="education__content">
             {DataEducation.Infra.map((item) => (
+              <div key={item.id}>
               <EducationItem logo={iconObj[item.icon]} data={item} />
+              </div>
             ))}
           </div>
         </div>
@@ -83,7 +89,9 @@ function Education() {
           <h5>Programming</h5>
           <div className="education__content">
             {DataEducation.Code.map((item) => (
+              <div key={item.id}>
               <EducationItem logo={iconObj[item.icon]} data={item} />
+              </div>
             ))}
           </div>
         </div>

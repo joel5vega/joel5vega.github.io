@@ -3,9 +3,9 @@ import React from "react";
 function EducationItem(props) {
   const { name, description, link } = props.data;
   return (
-    <div key={link} className="education__item">
+    <div className="education__item">
       <a href={link}>
-        {props.logo} {name}
+        {props.logo} {name} 
       </a>
     </div>
   );

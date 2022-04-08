@@ -23,9 +23,9 @@
 
   --transition: all 400ms ease;
 
-  --container-width-lg: 80%;
-  --container-width-md: 86%;
-  --container-width-sm: 95%;
+  --container-width-lg: 100vw;
+  --container-width-md: 100vw;
+  --container-width-sm: 100vw;
 }
 html {
   scroll-behavior: smooth;

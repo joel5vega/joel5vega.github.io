@@ -2,8 +2,9 @@ import "./experience.css";
 import { FaLinux } from "react-icons/fa";
 import { GiArchiveResearch } from "react-icons/gi";
 import { FiPenTool } from "react-icons/fi";
-import { GrDocumentPerformance } from "react-icons/gr";
-import {FcDocument} from 'react-icons/fc'
+import { FcDocument } from "react-icons/fc";
+import LogoQTM from "../../assets/logo/logo-qtm.png";
+
 const Experience = () => {
   return (
     <section id="experience">
@@ -11,18 +12,19 @@ const Experience = () => {
       <h2>My experience</h2>
       <div className="container experience__container">
         <div className="experience__item">
-          <h3>IT Ops engineer</h3>
+          <h3>
+            IT Ops engineer <img className="icon" src={LogoQTM} />{" "}
+          </h3>
           <h5>+5 years of experience</h5>
           <div className="experience__content">
             <article className="experience__details">
               <div>
                 <h4>
-                  {" "}
                   <FaLinux className="experience__details-icons" />
-                   Linux{" "}
+                  Linux
                 </h4>
                 <small className="text-light">
-                   Managing critical linux servers
+                  Managing critical linux servers
                 </small>
               </div>
             </article>
@@ -41,11 +43,11 @@ const Experience = () => {
             <article className="experience__details">
               <div>
                 <h4>
-                <FiPenTool className="experience__details-icons" />
+                  <FiPenTool className="experience__details-icons" />
                   Implementation
                 </h4>
                 <small className="text-light">
-                   Implementation of multiple technology solutions:
+                  Implementation of multiple technology solutions:
                   <br></br>
                   Red Hat Enterprise Virtualization. Oracle Linux Manager. RH
                   Satellite.
@@ -56,7 +58,7 @@ const Experience = () => {
               <div>
                 <h4>
                   <FcDocument className="experience__details-icons" />
-                   Technical documentation
+                  Technical documentation
                 </h4>
                 <small className="text-light">
                   Documenting infrastructure implementations.

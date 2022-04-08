@@ -13,7 +13,7 @@ const Experience = () => {
       <div className="container experience__container">
         <div className="experience__item">
           <h3>
-            IT Ops engineer <img className="icon" src={LogoQTM} />{" "}
+            IT Ops engineer <a href="http://129.151.103.245:3000/" target="_blank"> <img className="icon" src={LogoQTM} /></a>{" "}
           </h3>
           <h5>+5 years of experience</h5>
           <div className="experience__content">

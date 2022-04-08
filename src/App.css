@@ -25,7 +25,7 @@
 
   --container-width-lg: 100vw;
   --container-width-md: 100vw;
-  --container-width-sm: 100vw;
+  /* --container-width-sm: 80%; */
 }
 html {
   scroll-behavior: smooth;
@@ -41,6 +41,7 @@ html {
   line-height: 1.7;
   font-family: "Red Hat Display", sans-serif;
   position: absolute;
+  justify-content: center;
 }
 
 /* GENERAR STYLES*/

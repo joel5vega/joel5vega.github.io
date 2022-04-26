@@ -12,6 +12,7 @@ function Contact() {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    alert("Sending message")
     emailjs
       .sendForm(
         "service_joelpablo",
@@ -22,6 +23,8 @@ function Contact() {
       .then(
         (result) => {
           console.log(result.text);
+          alert("Message sent")
+          form.current.reset()
         },
         (error) => {
           console.log(error.text);

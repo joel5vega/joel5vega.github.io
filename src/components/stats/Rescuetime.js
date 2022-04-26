@@ -20,9 +20,9 @@ const Rescuetime = () => {
     const [daily, setDaily] = React.useState([]);
     const [category, setCategory] = React.useState([]);
 
-    const CORS_SERVER = 'https://cors-anywhere.herokuapp.com/'
+    // const CORS_SERVER = 'https://onmxsgizrl.execute-api.us-east-1.amazonaws.com/default/cors-anywhere'
 
-    // const CORS_SERVER = 'http://localhost:8080/'
+    const CORS_SERVER = 'http://localhost:8080/'
 
     React.useEffect(() => {
         axios({

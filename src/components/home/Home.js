@@ -17,7 +17,7 @@ const Home = () => {
                 <Quote />
                 <CTA />
                 <div className='badges'>
-                    <div className="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="HORIZONTAL" data-vanity="joel5vega" data-version="v1"></div>
+                    {/* <div className="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="HORIZONTAL" data-vanity="joel5vega" data-version="v1"></div> */}
                 </div>
                 <Redes />
             </div>

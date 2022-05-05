@@ -1,6 +1,11 @@
 .header__container {
   text-align: center;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
   /* position: relative; */
 }
 
@@ -41,7 +46,10 @@
 /*QUote*/
 .quote {
   padding: 1rem;
-  font-size: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  max-width: 300px;
+  /* font-size: 1.5rem; */
   font-style: italic;
   font-weight: 300;
   color: var(--color-white  );

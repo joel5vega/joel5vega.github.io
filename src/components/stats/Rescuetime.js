@@ -25,7 +25,7 @@ const Rescuetime = () => {
     const CORS_SERVER = 'http://localhost:8080/'
 
     React.useEffect(() => {
-        axios({
+               axios({
             method: 'get',
             url: CORS_SERVER + dailyURL,
         }).then(res => {
@@ -59,18 +59,18 @@ const Rescuetime = () => {
     }
     var categoryData = []
     //ordenar los dias de la semana
-    function ordenar(diario){
-        var orden= diario.sort((a, b) => (convertirFecha(a.date).mes - convertirFecha(b.date)) ? 1 : -1)
+    function ordenar(diario) {
+        var orden = diario.sort((a, b) => (convertirFecha(a.date).mes - convertirFecha(b.date)) ? 1 : -1)
         // var reverse=orden.reverse()
-        console.log("orden:",orden)
+        console.log("orden:", orden)
         // setDaily(orden)
         return orden;
     }
 
-    
+
     // console.log("dayli00",daily)
     // var dailyO=daily.sort((a, b) => (convertirFecha(a.date) - convertirFecha(b.date)) ? 1
-///
+    ///
     category.map(function (row) {
         var dato = {};
         dato.horas = row[1] / 3600;
@@ -84,7 +84,7 @@ const Rescuetime = () => {
     )
     // console.log("datos limpios", categoryData)
 
-   
+
     function CustomTooltip({ active, payload, label }) {
         if (active) {
             var horas = daily.find(el => el.date === label).all_productive_duration_formatted;

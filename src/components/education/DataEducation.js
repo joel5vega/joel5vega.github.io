@@ -15,7 +15,7 @@ const DataEducation = {
     "Cloud": [
         {"id":6, "name": "AWS", "icon": "aws", "link":"https://drive.google.com/file/d/1JD_Dk3Yv6iHUge8DQo00r3zfJ9t0H_h5/preview" },
         {
-            "name": "Azure", "icon": "azure", "link":"https://drive.google.com/file/d/1BDiacHUciFhrFnmq1eYqsCnyvQ9H_u5Y/preview",
+           "id":30, "name": "Azure", "icon": "azure", "link":"https://drive.google.com/file/d/1BDiacHUciFhrFnmq1eYqsCnyvQ9H_u5Y/preview",
         },
         {"id":8,
             "name": "OCI", "icon": "oci",

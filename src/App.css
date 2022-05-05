@@ -14,12 +14,12 @@
   --claro: #a5cfea;
   --blanco: #ffffff;
 
-  --color-bg: #1f1f38;
-  --color-bg-variant: #2c2c6c;
+  --color-bg: #000000;
+  --color-bg-variant: rgba(0,0,0,0,04);
   --color-primary: #4db5ff;
-  --color-primary-variant: rgba(77, 181, 255, 04);
-  --color-white: #fff;
-  --color-light: rgba(255, 255, 255, 0.6);
+  --color-primary-variant: #ffffff;
+  --color-white: #ffffff;
+  --color-light: #ffffff);
 
   --transition: all 400ms ease;
 

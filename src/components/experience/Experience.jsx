@@ -12,9 +12,12 @@ const Experience = () => {
       <h2>My experience</h2>
       <div className="container experience__container">
         <div className="experience__item">
-          <h3>
-            IT Ops engineer <a href="http://129.151.103.245:3000/" target="_blank"> <img className="icon" src={LogoQTM} /></a>{" "}
-          </h3>
+          <h3>IT Ops engineer</h3>
+          <h4>
+            <a href="http://129.151.103.245:3000/" target="_blank">
+              <img className="icon" src={LogoQTM} />
+            </a>
+          </h4>
           <h5>+5 years of experience</h5>
           <div className="experience__content">
             <article className="experience__details">

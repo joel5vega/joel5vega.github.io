@@ -25,7 +25,7 @@ const Rescuetime = () => {
     const CORS_SERVER = 'http://localhost:8080/'
 
     React.useEffect(() => {
-               axios({
+        axios({
             method: 'get',
             url: CORS_SERVER + dailyURL,
         }).then(res => {
@@ -119,7 +119,10 @@ const Rescuetime = () => {
 
     return (
         <div className="stats__container">
-            <h2>Week Productivity  </h2>
+
+            <div><h2>Week Productivity  </h2>
+                <img src="https://upgradedreviews.s3.amazonaws.com/images/coupons/logos/rescuetime.png" alt="rescuetime" />
+            </div>
             <h5>Total productive hours & Performance</h5>
             <ResponsiveContainer minWidth={250} minHeight={200} maxWidth={"60%"}>
                 <ComposedChart width={500}

@@ -8,8 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="Portfolio de Joel Vega" />
-    <meta name="keywords" content="Joel, Vega, Joel Vega, Joel Pablo, Joel Pablo Vega Cruz, Linux, La Paz, Bolivia, Tech, Technology">
-    <meta name="author" content="Joel Vega">
+    <meta
+      name="keywords"
+      content="Joel, Vega, Joel Vega, Joel Pablo, Joel Pablo Vega Cruz, Linux, La Paz, Bolivia, Tech, Technology"
+    />
+    <meta name="author" content="Joel Vega" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo.svg" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -22,7 +25,26 @@
       href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,600;0,800;1,400&display=swap"
       rel="stylesheet"
     />
-    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+    <script
+      src="https://platform.linkedin.com/badges/js/profile.js"
+      async
+      defer
+      type="text/javascript"
+    ></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-MMVFQYWKP4"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-MMVFQYWKP4");
+    </script>
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.

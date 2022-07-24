@@ -1,9 +1,24 @@
 import "./experience.css";
-import { FaLinux } from "react-icons/fa";
+import { FaLinux, FaWhatsapp } from "react-icons/fa";
 import { GiArchiveResearch } from "react-icons/gi";
 import { FiPenTool } from "react-icons/fi";
 import { FcDocument } from "react-icons/fc";
+import {
+  SiApachekafka,
+  SiOracle,
+  SiTwilio,
+  SiZapier,
+  SiGoogleanalytics,
+  SiReact,
+  SiGooglesheets,
+  SiServerfault,
+  SiMysql
+} from "react-icons/si";
+import { GrAnalytics, GrVirtualMachine } from "react-icons/gr";
+import { DiRedhat } from "react-icons/di";
 import LogoQTM from "../../assets/logo/logo-qtm.png";
+import LogoAcceptGO from "../../assets/logo/logo-acceptgo.png";
+import ExperienceItem from "./ExperienceItem";
 
 const Experience = () => {
   return (
@@ -11,111 +26,80 @@ const Experience = () => {
       <h5>Skills I Have</h5>
       <h2>My experience</h2>
       <div className="container experience__container">
-        <div className="experience__item">
-          <h3>IT Ops engineer</h3>
-          <h4>
-            <a href="http://129.151.103.245:3000/" target="_blank">
-              <img className="icon" src={LogoQTM} />
-            </a>
-          </h4>
-          <h5>+5 years of experience</h5>
-          <div className="experience__content">
-            <article className="experience__details">
-              <div>
-                <h4>
-                  <FaLinux className="experience__details-icons" />
-                  Linux
-                </h4>
-                <small className="text-light">
-                  Managing critical linux servers
-                </small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <div>
-                <h4>
-                  <GiArchiveResearch className="experience__details-icons" />
-                  Log analysis
-                </h4>
-                <small className="text-light">
-                  Proactive analysis of logs.
-                </small>
-                <small className="text-light">Bash scripting</small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <div>
-                <h4>
-                  <FiPenTool className="experience__details-icons" />
-                  Implementation
-                </h4>
-                <small className="text-light">
-                  Implementation of multiple technology solutions:
-                  <br></br>
-                  Red Hat Enterprise Virtualization. Oracle Linux Manager. RH
-                  Satellite.
-                </small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <div>
-                <h4>
-                  <FcDocument className="experience__details-icons" />
-                  Technical documentation
-                </h4>
-                <small className="text-light">
-                  Documenting infrastructure implementations.
-                </small>
-              </div>
-            </article>
-          </div>
-        </div>
-        {/* <div className="experience__item">
-          <h3>Rol22</h3>
-          <div className="experience__content">
-            <article className="experience__details">
-              <FaLinux />
-              <div>
-                <h4>Linux administration</h4>
-                <small className="text-light">detail</small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <FaLinux />
-              <div>
-                <h4>Log analysis</h4>
-                <small className="text-light">detail</small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <FaLinux />
-              <div>
-                <h4>Log analysis</h4>
-                <small className="text-light">detail</small>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <div className="experience__item">
-          <h3>R333</h3>
-          <div className="experience__content">
-            <article className="experience__details">
-              <FaLinux />
-              <div>
-                <h4>Linux administration</h4>
-                <small className="text-light">detail</small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <FaLinux />
-              <div>
-                <h4>Log analysis</h4>
-                <small className="text-light">detail</small>
-              </div>
-            </article>
-          </div>
-        </div> */}
+        <ExperienceItem
+          title="IT Ops Engineer"
+          logo={LogoQTM}
+          link="http://129.151.103.245:3000/"
+          experience="+5 years of experience"
+          details={[
+            {
+              icon: <FaLinux />,
+              skill: "Linux",
+              description: "Managing critical linux servers."
+            },
+            {
+              icon: <GiArchiveResearch />,
+              skill: "Log analysis",
+              description: "Proactive analysis of logs.\nBash scripting."
+            },
+            {
+              icon: <FiPenTool />,
+              skill: "Implementation",
+              description:
+                "Implementation of multiple technology solutions: \nRed Hat Enterprise Virtualization. Oracle Linux Manager.RH Satellite."
+            },
+            {
+              icon: <FcDocument />,
+              skill: "Technical documentation",
+              description: "Documenting infrastructure implementations."
+            }
+          ]}
+          technologies={[
+            <SiApachekafka />,
+            <FaLinux />,
+            <SiOracle />,
+            <DiRedhat />,
+            <SiServerfault />,
+            <SiMysql/>
+          ]}
+        />
+        <ExperienceItem
+          title="Lead Developer"
+          logo={LogoAcceptGO}
+          link="http://acceptgo.co"
+          experience="3 months"
+          details={[
+            {
+              icon: <SiTwilio />,
+              skill: "Twilio",
+              description: "Automated SMS to new leads."
+            },
+            {
+              icon: <SiZapier />,
+              skill: "Zapier",
+              description:
+                "Integration between Calendly and GSheets through Zapier, to centralize Database."
+            },
+            {
+              icon: <SiGoogleanalytics />,
+              skill: "Analytics",
+              description: "Implementation of Google Analytics to landing page, to analyze traffic."
+            },
+            {
+              icon: <SiReact />,
+              skill: "Toolbox",
+              description: "Migrating the business logic to new technology in react."
+            }
+          ]}
+          technologies={[
+            <SiTwilio />,
+            <SiZapier />,
+            <SiGoogleanalytics />,
+            <SiReact />,
+            <SiGooglesheets />,
+            <FaWhatsapp />,
+          ]}
+        />
       </div>
     </section>
   );

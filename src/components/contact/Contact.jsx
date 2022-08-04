@@ -45,7 +45,7 @@ function Contact() {
             </a>
           </div>
           <div className="contact__item">
-            <a href="https://wa.me?phone=71631006" target="_blank" rel="noreferrer">
+            <a href="https://wa.me?phone=59171631006" target="_blank" rel="noreferrer">
               <h5>Whatsapp</h5>
               <div className="contact__icon">
                 <IoLogoWhatsapp />

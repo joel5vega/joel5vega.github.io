@@ -65,6 +65,7 @@ h1 {
   color:var(--color-primary)
 }
 section {
+  padding-top: 1rem;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

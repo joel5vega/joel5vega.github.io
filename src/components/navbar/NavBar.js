@@ -1,12 +1,12 @@
 import { React } from 'react';
 import "./navbar.css";
 import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
-import { MdWork ,MdCall} from "react-icons/md";
-import { ImBooks} from "react-icons/im";
-import { useState } from 'react';
-import {IoIosRocket} from 'react-icons/io';
-const NavBar = () => {
-    const [activeNav, setActiveNav] = useState('#');
+import { MdWork, MdCall } from "react-icons/md";
+import { ImBooks } from "react-icons/im";
+import { IoIosRocket } from 'react-icons/io';
+const NavBar = (props) => {
+    const activeNav =props.activeNav;
+    const setActiveNav =props.setActiveNav;
     return (
         <nav>
             <a href="#" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}><AiOutlineHome /></a>

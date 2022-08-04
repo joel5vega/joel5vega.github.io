@@ -17,14 +17,11 @@ function App() {
   const optionscel=["#","#education","#experience","#experience","#projects","#projects","#about","#about","#about","#about","#contact","#contact","#contact"];
   useEffect(() => { 
     const handleScroll = (event) => {
-      console.log(window.innerHeight)
       const page= Math.floor(window.scrollY/vHeight);
-      console.log(options[page])
       if(window.innerWidth<480){
         setActiveNav(optionscel[page])  
       }
       else{setActiveNav(options[page])}
-     console.log('window.scrollY', window.scrollY);
   }
     window.addEventListener('scroll', handleScroll);
     return () => {

@@ -2,7 +2,6 @@ import './App.css';
 //Importar componentes
 import Home from './components/home/Home';
 import NavBar from './components/navbar/NavBar';
-import Stats from './components/stats/Stats';
 import AboutMe from './components/about/AboutMe';
 import Projects from './components/project/Projects';
 import Experience from './components/experience/Experience';
@@ -18,7 +17,6 @@ function App() {
       <Education />
       <Experience />
       <Projects />
-      <Stats />
       <AboutMe />
       <Contact/>
       <Footer />

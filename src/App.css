@@ -65,10 +65,10 @@ h1 {
   color:var(--color-primary)
 }
 section {
-  padding-top: 1rem;
   min-height: 100vh;
-  /* padding: auto; */
-  /* border: 1px solid var(--color-primary); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 section > h2,
 section > h5 {
@@ -83,6 +83,7 @@ section > h2 {
 }
 .text-light {
   color: var(--color-light);
+  font-size: small;
 }
 a {
   color: var(--color-primary);
@@ -129,7 +130,7 @@ a:hover {
     width: var(--container-width-md);
   }
   section {
-    margin-top: 6rem;
+    /* margin-top: 6rem; */
   }
 
 }

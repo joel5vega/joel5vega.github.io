@@ -1,17 +1,13 @@
 .proyectos__container{
-  margin-top: 3rem;
-  margin:auto;
   display:flex;
   flex-wrap:wrap;
-  /* justify-content: center; */
+  justify-content: center;
 }
 .proyecto__container{
   padding: 1rem;
-  display: grid;
-  border-radius: 2rem;
   justify-content: center;
   min-width: 300px;
-  max-width: 450px;
+  max-width: 400px;
 }
 .proyecto__show{
   display:grid;

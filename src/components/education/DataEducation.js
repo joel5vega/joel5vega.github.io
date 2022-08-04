@@ -38,7 +38,7 @@ const DataEducation = {
         { "id":16,"name": "Telecom", "icon": "telecom" ,"link":"https://drive.google.com/file/d/17GoxFKHlbbnEWhV605zqaQq_vZ6gfjlP/preview"},
     ],
     "Code": [
-        { "id":17,"name": "Python", "icon": "python" }, {"id":18, "name": "PHP", "icon": "php" }, {"id":19, "name": "JavaScript", "icon": "js" },
+        { "id":17,"name": "Python", "icon": "python","link":"https://drive.google.com/file/d/1-PwRa10MkAPWmAkXqJTsSfXoydmqxAyK/preview" }, {"id":18, "name": "PHP", "icon": "php" }, {"id":19, "name": "JavaScript", "icon": "js" },
         { "id":20,"name": "Bash", "icon": "bash" },{"id":22,"name":"Software Development","icon":"minnesota","link":"https://drive.google.com/file/d/1cVkm2_WCyZGPKnoLTrOdKwa_RS9U0TWe/preview",},
         { "id":23,"name": "React", "icon": "react" }
     ],

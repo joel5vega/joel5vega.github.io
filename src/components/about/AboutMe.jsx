@@ -39,7 +39,7 @@ let logoObj = {
 const AboutMe = () => {
   return (
     <section id="about">
-      <h2>AboutMe</h2>
+      <h1>AboutMe</h1>
       <div className="faceta__container">
         {DataAboutMe.map(
           ({ id, name, logo, photo, description, place, link }) => (

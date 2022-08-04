@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: row;
   grid-auto-flow: dense;
-  gap: 1rem;
   text-align: center;
   overflow: hidden;
   flex-wrap: wrap;
@@ -20,7 +19,7 @@
 .education__area {
   background-color: var(--color-bg-variant);
   border-radius: 3rem;
-  padding: 1rem;
+  /* padding: 0.1rem; */
   height: fit-content;
 }
  .education__area h5{
@@ -90,4 +89,12 @@ iframe:focus {
 
 iframe[seamless] {
   display: block;
+}
+.logo{
+  max-width: 3rem;
+  max-height: 2rem;
+  padding: 0.5rem;
+  justify-self: center;
+  background-color: white;
+  border-radius: 0.6rem;
 }

@@ -2,7 +2,6 @@ import React from 'react';
 import "./home.css"
 import Perfil from '../../assets/photos/joel.png'
 import CTA from '../../components/home/CTA';
-import Redes from '../../components/home/Redes';
 import Quote from '../../components/home/Quote';
 
 const Home = () => {
@@ -16,9 +15,6 @@ const Home = () => {
                 <article> <img src="https://komarev.com/ghpvc/?username=joel5vega&label=Profile%20views&color=4db5ff" alt="joel5vega" /> </article>
                 <Quote />
                 <CTA />
-                <div className='badges'>
-                    {/* <div className="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="HORIZONTAL" data-vanity="joel5vega" data-version="v1"></div> */}
-                </div>
             </div>
         </section>
     )

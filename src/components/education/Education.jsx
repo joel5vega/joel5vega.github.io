@@ -1,7 +1,7 @@
 import React from "react";
 import "./education.css";
 import EducationItem from "./EducationItem";
-
+import Certificado from "./Certificado";
 /// Logos
 import { FaLinux, FaCentos ,FaServer} from "react-icons/fa";
 import { AiOutlineCloudSync } from "react-icons/ai";
@@ -22,9 +22,8 @@ import {
   SiJavascript,
   SiGnubash,SiReact,SiAnsible,SiSpringsecurity
 } from "react-icons/si";
-import {IoLanguageSharp} from "react-icons/io"
 import { DiGoogleCloudPlatform, DiPhp } from "react-icons/di";
-import { GrFirewall ,GrSystem} from "react-icons/gr";
+import { GrFirewall } from "react-icons/gr";
 import {FaCode} from "react-icons/fa"
 import {RiTranslate} from "react-icons/ri"
 import DataEducation from "./DataEducation";
@@ -57,7 +56,8 @@ let iconObj = {
 function Education() {
   return (
     <section id="education">
-      <h2>Education</h2>
+      <h1>Education</h1>
+      {/* <Certificado link="https://drive.google.com/file/d/1-PwRa10MkAPWmAkXqJTsSfXoydmqxAyK/preview"/> */}
       <div className="container education__container">
         <div className="education__area">
           <h5><MdOutlineSettingsSystemDaydream/>Operating Systems</h5>

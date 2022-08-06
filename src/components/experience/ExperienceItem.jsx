@@ -1,6 +1,7 @@
 import React from "react";
 import Chip from "@mui/material/Chip";
 import Stack from "@mui/material/Stack";
+
 function ExperienceItem(props) {
   return (
     <div className="experience__item">
@@ -13,14 +14,16 @@ function ExperienceItem(props) {
       <h5>{props.experience}</h5>
       <div className="experience__content">
         {props.details.map((detail, index) => (
-          <article id={index} className="experience__details">
+          <article key={index} className="experience__details">
             <div>
               <h4>
                 {detail.icon}
                 {detail.skill}
               </h4>
               {detail.description.map((description, indice) => (
-                <li key={indice} className="text-light" >{description}</li>
+                <li key={indice} className="text-light">
+                  {description}
+                </li>
               ))}
             </div>
           </article>
@@ -29,7 +32,7 @@ function ExperienceItem(props) {
         <Stack direction="row" spacing={1}>
           {props.technologies.map((technology, index) => (
             <Chip
-              id={index}
+              key={index}
               label={technology}
               variant="outlined"
               color="primary"

@@ -5,7 +5,7 @@ import DataAboutMe from "./DataAboutMe";
 import "./about.css";
 // import 'swiper/css';
 // import 'swiper/css/pagination';
-
+import AboutItem from "./AboutItem";
 //Fotos
 import China from "../../assets/photos/china.png";
 import Susi from "../../assets/photos/susi.png";
@@ -17,7 +17,7 @@ import TWMS from "../../assets/photos/xa-2016.png";
 ////Logos
 import { SiHuawei } from "react-icons/si";
 import { GiUsaFlag } from "react-icons/gi";
-import {RiGlobalFill}from "react-icons/ri"
+import { RiGlobalFill } from "react-icons/ri";
 import LogoXA from "../../assets/logo/logo-xa.png";
 import LogoCNN from "../../assets/logo/logo-canaan.png";
 // import LogoSoldados from "../../assets/logo/logo-ssjj-soldados-de-la-fe.png";
@@ -34,7 +34,7 @@ let logoObj = {
   susi: <GiUsaFlag />,
   twms: <RiGlobalFill />,
   cnn: <img className="about__icon" src={LogoCNN} />,
-  xa: <img className="about__icon"src={LogoXA}   />
+  xa: <img className="about__icon" src={LogoXA} />
 };
 const AboutMe = () => {
   return (
@@ -44,15 +44,13 @@ const AboutMe = () => {
         {DataAboutMe.map(
           ({ id, name, logo, photo, description, place, link }) => (
             <div key={id} className="faceta">
-              <h5>
-                {name} {logoObj[logo]}
-              </h5>
-              <div className="photo">{photoObj[photo]}</div>
-              <div className="description">{description}</div>
-              <div className="place">{place}</div>
-              <a href={link} target="__blank" className="btn">
-                More
-              </a>
+              <AboutItem
+                title={name}
+                logo={logoObj[logo]}
+                photo={photoObj[photo]}
+                description={description}
+                place={place}
+              />
             </div>
           )
         )}

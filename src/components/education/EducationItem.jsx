@@ -38,25 +38,23 @@ function EducationItem(props) {
             aria-describedby="modal-modal-description"
           >
             <Box sx={style}>
-              {link && (
-                <a className="certificado" href={link} target="__blank">
-                  <Certificado link={link} name={name} />
-                </a>
-              )}
               <Typography
                 id="modal-modal-title"
                 sx={{ mt: 2, color: "var(--color-primary)" }}
-              >
+              >{link && (
+                  <Certificado link={link} name={name} />
+              )}
+              
                 {name}
               </Typography>
-              <Typography id="modal-modal-title" variant="h6" component="h2">
+              <Typography id="modal-modal-title" variant="h2" component="h1">
                 {/* Text in a modal */}
               </Typography>
             </Box>
           </Modal>
         </>
       ) : (
-        <h2>{props.logo}</h2>
+        <h2 className="certificado">{props.logo}</h2>
       )}
     </div>
   );

@@ -1,9 +1,10 @@
 .education__container {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  flex-direction: colum;
   grid-auto-flow: dense;
   text-align: center;
   overflow: hidden;
+  gap: 1.2rem;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -18,15 +19,18 @@
 }
 .education__area {
   background-color: var(--color-bg-variant);
-  border-radius: 3rem;
-  /* padding: 0.1rem; */
+  border-radius: 1rem;
+  padding: 0.1rem;
+  margin: 0.1rem;
   height: fit-content;
+  /* border: 1px solid var(--color-primary); */
 }
  .education__area h5{
     display: flex;
     flex-direction: row;
     gap:1rem;
     font-size: 1.2rem;
+    justify-content: center;
 } 
 .education__content {
   display: flex;
@@ -82,7 +86,24 @@
 }
 
 .certificado {
-  color:var(--color-primary)
+  color:className="certificado";
+  background: var(--color-bg-variant);
+  font-weight: bolder;
+  border-radius: 2rem;
+  width: 2rem;
+  height: 2rem;
+}
+.nocertificado{
+  color:grey;
+  background: var(--color-bg-variant);
+  font-weight: lighter;
+  border-radius: 2rem;
+  width: 2rem;
+  height: 2rem;
+}
+.certificado:hover {
+  background: var(--color-primary);
+  color: var(--color-bg);
 }
 /* .btn {
   max-width: 2rem;

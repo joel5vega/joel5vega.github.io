@@ -14,7 +14,7 @@ function App() {
   const [activeNav, setActiveNav] = useState('#')
   const vHeight=window.innerHeight;
   const options=["#","#education","#experience","#projects","#about","#contact"];
-  const optionscel=["#","#education","#experience","#experience","#projects","#projects","#about","#about","#about","#about","#contact","#contact","#contact"];
+  const optionscel=["#","#education","#experience","#experience","#projects","#projects","#projects","#about","#about","#about","#contact","#contact","#contact"];
   useEffect(() => { 
     const handleScroll = (event) => {
       const page= Math.floor(window.scrollY/vHeight);

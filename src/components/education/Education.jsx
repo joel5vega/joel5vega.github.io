@@ -23,11 +23,11 @@ import {
   SiGnubash,
   SiReact,
   SiAnsible,
-  SiSpringsecurity
+  SiSpringsecurity,SiVirtualbox
 } from "react-icons/si";
 import  {HiTranslate} from "react-icons/hi";
 import { DiGoogleCloudPlatform, DiPhp } from "react-icons/di";
-import { GrFirewall ,GrCodepen} from "react-icons/gr";
+import { GrFirewall ,GrCodepen,GrVirtualMachine,GrVirtualStorage} from "react-icons/gr";
 import { FaCode } from "react-icons/fa";
 import { RiTranslate } from "react-icons/ri";
 import DataEducation from "./DataEducation";
@@ -48,6 +48,7 @@ let iconObj = {
   cisco: <SiCisco />,
   mysql: <SiMysql />,
   kubernetes: <SiKubernetes />,
+  container:<SiVirtualbox />, 
   docker: <SiDocker />,
   rancher: <SiRancher />,
   telecom: <SiHuawei />,
@@ -66,7 +67,7 @@ let iconObj = {
 function Education() {
   return (
     <section id="education">
-      <h1>Education</h1>
+      <h1>My Skills</h1>
       {/* <Certificado link="https://drive.google.com/file/d/1-PwRa10MkAPWmAkXqJTsSfXoydmqxAyK/preview"/> */}
       <div className="container education__container">
         <div className="education__area">
@@ -75,7 +76,7 @@ function Education() {
             Operating Systems
           </h5>
 
-          <Stack direction="row" spacing={2} alignContent="center">
+          <Stack direction="row" spacing={2} justifyContent="center">
             {DataEducation.OS.map((item) => (
               <EducationItem
                 key={item.id}
@@ -90,7 +91,7 @@ function Education() {
             <AiOutlineCloudSync />
             Cloud Technology
           </h5>
-          <Stack direction="row" spacing={2} alignContent="center">
+          <Stack direction="row" spacing={1} justifyContent="center">
             {DataEducation.Cloud.map((item) => (
               <EducationItem
                 key={item.id}
@@ -105,7 +106,7 @@ function Education() {
             <FaServer />
             IT Infrastructure
           </h5>
-          <Stack direction="row" spacing={2} alignContent="center">
+          <Stack direction="row" spacing={2} justifyContent="center">
             {DataEducation.Infra.map((item) => (
                 <EducationItem key={item.id}logo={iconObj[item.icon]} data={item} />
             ))}
@@ -116,7 +117,7 @@ function Education() {
             <FaCode />
             Programming
           </h5>
-          <Stack direction="row" spacing={2} alignContent="center">
+          <Stack direction="row" spacing={2} justifyContent="center">
             {DataEducation.Code.map((item) => (
                 <EducationItem key={item.id}logo={iconObj[item.icon]} data={item} />
             ))}
@@ -127,7 +128,7 @@ function Education() {
             <RiTranslate />
             Languages{" "}
           </h5>
-          <Stack direction="row" spacing={2}>
+          <Stack direction="row" justifyContent="center"spacing={2}>
             {DataEducation.Lang.map((item) => (
                 <EducationItem key={item.id}logo={iconObj[item.icon]} data={item} />
             ))}

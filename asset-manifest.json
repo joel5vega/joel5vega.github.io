@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c6da4efd.css",
-    "main.js": "/static/js/main.e972bce3.js",
+    "main.css": "/static/css/main.530d2fea.css",
+    "main.js": "/static/js/main.892d276e.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/logo-qtm.png": "/static/media/logo-qtm.6a41c37a5250035fdbd9.png",
     "static/media/logo-canaan.png": "/static/media/logo-canaan.c5d2a82df300734cc7f9.png",
@@ -13,12 +13,12 @@
     "static/media/china.png": "/static/media/china.1835e130ce2d2a7ab266.png",
     "static/media/joel.png": "/static/media/joel.57d13f5b9386237adf11.png",
     "index.html": "/index.html",
-    "main.c6da4efd.css.map": "/static/css/main.c6da4efd.css.map",
-    "main.e972bce3.js.map": "/static/js/main.e972bce3.js.map",
+    "main.530d2fea.css.map": "/static/css/main.530d2fea.css.map",
+    "main.892d276e.js.map": "/static/js/main.892d276e.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c6da4efd.css",
-    "static/js/main.e972bce3.js"
+    "static/css/main.530d2fea.css",
+    "static/js/main.892d276e.js"
   ]
 }

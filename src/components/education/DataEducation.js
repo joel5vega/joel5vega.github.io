@@ -13,7 +13,7 @@ const DataEducation = {
         }
     ],
     "Cloud": [
-        {"id":6, "name": "AWS", "icon": "aws", "link":"https://drive.google.com/file/d/1JD_Dk3Yv6iHUge8DQo00r3zfJ9t0H_h5/preview" },
+        {"id":6, "name": "AWS", "icon": "aws", "link":"https://drive.google.com/file/d/1JD_Dk3Yv6iHUge8DQo00r3zfJ9t0H_h5/preview#toolbar=0&navpanes=0" },
         {
            "id":30, "name": "Azure", "icon": "azure", "link":"https://drive.google.com/file/d/1BDiacHUciFhrFnmq1eYqsCnyvQ9H_u5Y/preview",
         },
@@ -39,7 +39,7 @@ const DataEducation = {
     ],
     "Code": [
         { "id":17,"name": "Python", "icon": "python","link":"https://drive.google.com/file/d/1-PwRa10MkAPWmAkXqJTsSfXoydmqxAyK/preview" }, {"id":18, "name": "PHP", "icon": "php" }, {"id":19, "name": "JavaScript", "icon": "js" },
-        { "id":20,"name": "Bash", "icon": "bash" },{"id":22,"name":"Software Development","icon":"minnesota","link":"https://drive.google.com/file/d/1cVkm2_WCyZGPKnoLTrOdKwa_RS9U0TWe/preview",},
+        { "id":20,"name": "Bash", "icon": "bash" },{"id":22,"name":"Software Development","icon":"development","link":"https://drive.google.com/file/d/1cVkm2_WCyZGPKnoLTrOdKwa_RS9U0TWe/preview",},
         { "id":23,"name": "React", "icon": "react" }
     ],
     "Lang":[

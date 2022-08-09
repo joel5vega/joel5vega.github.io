@@ -36,6 +36,14 @@
   justify-content: center;
   align-items: center;
 }
+.skills{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 .education__item {
   display: flex;
   flex-direction: row;

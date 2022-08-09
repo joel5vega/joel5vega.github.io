@@ -5,9 +5,12 @@ function Certificado(props) {
     <div>
       <iframe
         src={props.link}
-        width="640"
-        height="480"
-        allow="autoplay"
+        width="fit-content"
+        height="240"
+         allow="autoplay"
+         autoPlay="0"
+        allowFullscreen
+        title={props.name}
       ></iframe>
     </div>
   );

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.530d2fea.css",
-    "main.js": "/static/js/main.892d276e.js",
+    "main.js": "/static/js/main.8fcd50f9.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/logo-qtm.png": "/static/media/logo-qtm.6a41c37a5250035fdbd9.png",
     "static/media/logo-canaan.png": "/static/media/logo-canaan.c5d2a82df300734cc7f9.png",
@@ -14,11 +14,11 @@
     "static/media/joel.png": "/static/media/joel.57d13f5b9386237adf11.png",
     "index.html": "/index.html",
     "main.530d2fea.css.map": "/static/css/main.530d2fea.css.map",
-    "main.892d276e.js.map": "/static/js/main.892d276e.js.map",
+    "main.8fcd50f9.js.map": "/static/js/main.8fcd50f9.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.530d2fea.css",
-    "static/js/main.892d276e.js"
+    "static/js/main.8fcd50f9.js"
   ]
 }

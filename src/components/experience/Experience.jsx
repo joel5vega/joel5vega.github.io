@@ -24,7 +24,7 @@ import ExperienceItem from "./ExperienceItem";
 const Experience = () => {
   return (
     <section id="experience">
-      <h5>Skills I Have</h5>
+      {/* <h5>Skills I Have</h5> */}
       <h1>My experience</h1>
       <div className="container experience__container">
         <ExperienceItem

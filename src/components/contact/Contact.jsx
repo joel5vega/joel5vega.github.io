@@ -1,18 +1,15 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import Redes from "../home/Redes"
-import "./contact.css"
-
-import { HiMail } from "react-icons/hi";
-import { IoLogoWhatsapp } from "react-icons/io";
-
-
+import Redes from "../home/Redes";
+import "./contact.css";
+import { MdOutlineEditCalendar } from "react-icons/md";
+import { PopupWidget } from "react-calendly";
 function Contact() {
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
-    alert("Sending message")
+    alert("Sending message");
     emailjs
       .sendForm(
         "service_joelpablo",
@@ -23,8 +20,8 @@ function Contact() {
       .then(
         (result) => {
           console.log(result.text);
-          alert("Message sent")
-          form.current.reset()
+          alert("Message sent");
+          form.current.reset();
         },
         (error) => {
           console.log(error.text);
@@ -36,35 +33,31 @@ function Contact() {
       <h2>Let's talk!</h2>
       <div className="contact__container">
         <div className="contact__cta">
-          <div className="contact__item">
-            <a href="mailto:joel5vega@gmail.com" target="_blank" rel="noreferrer">
-              <h5>Mail</h5>
-              <div className="contact__icon">
-                <HiMail />
-              </div>
-            </a>
-          </div>
-          <div className="contact__item">
-            <a href="https://wa.me?phone=59171631006" target="_blank" rel="noreferrer">
-              <h5>Whatsapp</h5>
-              <div className="contact__icon">
-                <IoLogoWhatsapp />
-              </div>
-            </a>
-          </div>
+          <form className="form" ref={form} onSubmit={sendEmail}>
+            <input placeholder="Name" type="text" name="name" />
+            <input placeholder="email" type="email" name="mail" required />
+            <textarea
+              type="textarea"
+              placeholder="Message here"
+              name="message"
+              required
+            />
+            <input className="boton" type="submit" value="Send" required />
+          </form>
         </div>
-        <form className="form" ref={form} onSubmit={sendEmail}>
-          <input placeholder="Name" type="text" name="name" />
-          <input placeholder="email" type="email" name="mail" required />
-          <textarea
-            type="textarea"
-            placeholder="Message here"
-            name="message"
-            required
-          />
-          <input className="boton" type="submit" value="Send" required />
-        </form>
-        <Redes/>
+
+        <Redes />
+        <PopupWidget
+          url="https://calendly.com/joelpablo/meet"
+          /*
+           * react-calendly uses React's Portal feature (https://reactjs.org/docs/portals.html) to render the popup modal. As a result, you'll need to
+           * specify the rootElement property to ensure that the modal is inserted into the correct domNode.
+           */
+          rootElement={document.getElementById("root")}
+          text={<MdOutlineEditCalendar />}
+          textColor="#ffffff"
+          color="#00a2ff"
+        />
       </div>
     </section>
   );

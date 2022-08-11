@@ -30,8 +30,8 @@ import {
     SiSpringsecurity, SiVirtualbox
 } from "react-icons/si";
 
-import { FaLinux, FaCentos  } from "react-icons/fa";
-import {  DiPhp } from "react-icons/di";
+import { FaLinux, FaCentos } from "react-icons/fa";
+import { DiPhp } from "react-icons/di";
 import { GrFirewall, GrCodepen } from "react-icons/gr";
 let iconObj = {
     linux: <FaLinux />,
@@ -68,29 +68,30 @@ const projImg = {
 }
 const Proyecto = (props) => {
     return (
-        <Card variant="outlined" sx={{ maxWidth: 360, background: "var(--fondo)", border: "1px solid var(--color-primary)", borderRadius: "1rem" }}>
+        <Card variant="outlined" sx={{ width: 360, background: "var(--fondo)", border: "1px solid var(--color-primary)", borderRadius: "1rem" }}>
             <CardActionArea>
-            <div className="proyecto__img">
-                {projImg[props.img]}
-            </div>
+                <div className="proyecto__img">
+                    {projImg[props.img]}
+                </div>
 
-            <CardContent>
-                <Typography gutterBottom variant="h5" component="div" color="var(--color-primary)">
-                    {props.title} {props.img}
-                </Typography>
-                <Typography variant="body2" color="var(--blanco)">
-                    {props.description}
-                </Typography>
-                <Stack direction="row" spacing={1} justifyContent="center">
-                    {props.tech.map((item) => (
-                        <h1>{iconObj[item]}</h1>
-                    ))}
-                </Stack>
-            </CardContent>
+                <CardContent>
+                    <Typography gutterBottom variant="h5" component="div" color="var(--color-primary)">
+                        {props.title}
+                    </Typography>
+                    <Typography variant="body2" color="var(--blanco)">
+                        {props.description}
+                    </Typography>
+
+                </CardContent>
             </CardActionArea>
             <CardActions>
                 <Button size="small" color="primary" >
                     <MoreInfo demo={props.link} repo={props.repo} />
+                    <Stack direction="row" spacing={1} justifyContent="center">
+                        {props.tech.map((item, key) => (
+                            <h2 key={key}>{iconObj[item]}</h2>
+                        ))}
+                    </Stack>
                 </Button>
             </CardActions>
         </Card>

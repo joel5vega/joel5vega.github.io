@@ -48,7 +48,7 @@ const DataEducation = {
     "Lang": [
         { "id": 50, "name": "English", "icon": "english", "level": "Advanced", "link": "https://drive.google.com/file/d/1bOmSIRUIDlNBhKvI5klTDP085pVfw7jb/preview" },
         { "id": 51, "name": "Chinese", "icon": "chinese", "level": "Basic", "link": "https://drive.google.com/file/d/17GpPWiHd4cOkikQ7jCuXwuwBGeFxQ7Oc/preview" },
-        { "id": 52, "name": "Spanish", "icon": "spanish", "level": "Native Speaker", "link": "https://drive.google.com/file/d/17GpPWiHd4cOkikQ7jCuXwuwBGeFxQ7Oc/preview" },
+        { "id": 52, "name": "Spanish", "icon": "spanish", "level": "Native Speaker" },
 
 
     ]

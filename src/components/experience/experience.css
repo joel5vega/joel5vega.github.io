@@ -9,15 +9,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
-  margin: 0 auto;
+  /* gap: 0.5rem; */
+  margin: 1rem auto;
   border: 1px solid transparent;
   transition: var(--transition);
   background: var(--color-bg);
   border-radius: 1rem;
   align-items: center;
   width: fit-content;
-  padding: 0.5rem;
+  /* padding: 0.5rem; */
 }
 .icon{
   max-height: 45px;
@@ -28,8 +28,7 @@
   
   background: var(--color-bg-variant);
   border-radius: 2rem;
-  
-  padding: 2rem;
+  /* padding: 2rem; */
   margin:0 auto;
   border: 1px solid transparent;
   transition: var(--transition);

@@ -76,7 +76,7 @@ function Education() {
             <FaServer />
             IT Infrastructure
           </h5>
-          <Stack direction="row" spacing={2} justifyContent="center">
+          <Stack direction="row" spacing={1} justifyContent="center">
             {DataEducation.Infra.map((item) => (
                 <EducationItem key={item.id}logo={iconObj[item.icon]} data={item} />
             ))}
@@ -87,7 +87,7 @@ function Education() {
             <FaCode />
             Programming
           </h5>
-          <Stack direction="row" spacing={2} justifyContent="center">
+          <Stack direction="row" spacing={1} justifyContent="center">
             {DataEducation.Code.map((item) => (
                 <EducationItem key={item.id}logo={iconObj[item.icon]} data={item} />
             ))}
@@ -99,7 +99,7 @@ function Education() {
             Operating Systems
           </h5>
 
-          <Stack direction="row" spacing={2} justifyContent="center">
+          <Stack direction="row" spacing={1} justifyContent="center">
             {DataEducation.OS.map((item) => (
               <EducationItem
                 key={item.id}
@@ -129,9 +129,9 @@ function Education() {
         <div className="education__area">
           <h5>
             <RiTranslate />
-            Languages{" "}
+            Languages
           </h5>
-          <Stack direction="row" justifyContent="center"spacing={2}>
+          <Stack direction="row" justifyContent="center"spacing={1}>
             {DataEducation.Lang.map((item) => (
                 <EducationItem key={item.id}logo={iconObj[item.icon]} data={item} />
             ))}

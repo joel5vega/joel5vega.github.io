@@ -28,7 +28,7 @@ function Contact() {
   };
   return (
     <section id="contact">
-      <h2>Let's talk!</h2>
+      <h2>Let's connect!</h2>
       <div className="contact__container">
         
           <form className="form" ref={form} onSubmit={sendEmail}>

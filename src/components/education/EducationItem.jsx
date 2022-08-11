@@ -1,8 +1,6 @@
 import React from "react";
-import { GiDiploma } from "react-icons/gi";
 import Certificado from "./Certificado";
 import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 
@@ -23,7 +21,7 @@ function EducationItem(props) {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(link);
   const handleClose = () => setOpen(false);
-  const { id, name, link } = props.data;
+  const { name, link } = props.data;
   return (
     <div>
       {link ? (

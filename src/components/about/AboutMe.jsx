@@ -1,6 +1,4 @@
 import React from "react";
-import { Pagination } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
 import DataAboutMe from "./DataAboutMe";
 import "./about.css";
 // import 'swiper/css';
@@ -23,18 +21,18 @@ import LogoCNN from "../../assets/logo/logo-canaan.png";
 // import LogoSoldados from "../../assets/logo/logo-ssjj-soldados-de-la-fe.png";
 
 let photoObj = {
-  china: <img src={China} className="photo" />,
-  susi: <img src={Susi} className="photo" />,
-  xa: <img src={XA} className="photo" />,
-  twms: <img src={TWMS} className="photo" />,
-  cnn: <img src={Canaan} className="photo" />
+  china: <img src={China} className="photo" alt="China"/>,
+  susi: <img src={Susi} className="photo" alt="SUSI"/>,
+  xa: <img src={XA} className="photo"alt="XA" />,
+  twms: <img src={TWMS} className="photo" alt="TWMS"/>,
+  cnn: <img src={Canaan} className="photo" alt="CNN"/>
 };
 let logoObj = {
   seeds: <SiHuawei />,
   susi: <GiUsaFlag />,
   twms: <RiGlobalFill />,
-  cnn: <img className="about__icon" src={LogoCNN} />,
-  xa: <img className="about__icon" src={LogoXA} />
+  cnn: <img className="about__icon" src={LogoCNN} alt="logo-cnn" />,
+  xa: <img className="about__icon" src={LogoXA} alt="logo-xa"/>
 };
 const AboutMe = () => {
   return (

@@ -34,9 +34,12 @@
   /* color:var(--color-bg) */
 }
 .photo {
-  /* overflow: hidden; */
+  overflow: hidden;
   height: auto;
-  max-width: 250px;
+  min-height: 180px;
+  max-height: 240px;
+  max-width:360px;
+  padding: 1rem;
   /* width: 500px; */
   border-radius: 1rem;
 }

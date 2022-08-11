@@ -23,19 +23,20 @@ import {
   SiGnubash,
   SiReact,
   SiAnsible,
-  SiSpringsecurity,SiVirtualbox
+  SiSpringsecurity,SiVirtualbox,
 } from "react-icons/si";
 import  {HiTranslate} from "react-icons/hi";
 import { DiGoogleCloudPlatform, DiPhp } from "react-icons/di";
-import { GrFirewall ,GrCodepen,GrVirtualMachine,GrVirtualStorage} from "react-icons/gr";
-import { FaCode } from "react-icons/fa";
+import { GrFirewall ,GrCodepen} from "react-icons/gr";
+import { FaCode ,FaLaravel} from "react-icons/fa";
 import { RiTranslate } from "react-icons/ri";
 import DataEducation from "./DataEducation";
 import { MdOutlineSettingsSystemDaydream } from "react-icons/md";
 import {TiSortAlphabeticallyOutline} from "react-icons/ti";
-
+import {DiLaravel} from "react-icons/di";
 let iconObj = {
   linux: <FaLinux />,
+  laravel: <FaLaravel />,
   suse: <SiSuse />,
   redhat: <SiRedhat />,
   centos: <FaCentos />,
@@ -72,6 +73,28 @@ function Education() {
       <div className="container education__container">
         <div className="education__area">
           <h5>
+            <FaServer />
+            IT Infrastructure
+          </h5>
+          <Stack direction="row" spacing={2} justifyContent="center">
+            {DataEducation.Infra.map((item) => (
+                <EducationItem key={item.id}logo={iconObj[item.icon]} data={item} />
+            ))}
+          </Stack>
+        </div>
+        <div className="education__area">
+          <h5>
+            <FaCode />
+            Programming
+          </h5>
+          <Stack direction="row" spacing={2} justifyContent="center">
+            {DataEducation.Code.map((item) => (
+                <EducationItem key={item.id}logo={iconObj[item.icon]} data={item} />
+            ))}
+          </Stack>
+        </div>
+        <div className="education__area">
+          <h5>
             <MdOutlineSettingsSystemDaydream />
             Operating Systems
           </h5>
@@ -101,28 +124,8 @@ function Education() {
             ))}
           </Stack>
         </div>
-        <div className="education__area">
-          <h5>
-            <FaServer />
-            IT Infrastructure
-          </h5>
-          <Stack direction="row" spacing={2} justifyContent="center">
-            {DataEducation.Infra.map((item) => (
-                <EducationItem key={item.id}logo={iconObj[item.icon]} data={item} />
-            ))}
-          </Stack>
-        </div>
-        <div className="education__area">
-          <h5>
-            <FaCode />
-            Programming
-          </h5>
-          <Stack direction="row" spacing={2} justifyContent="center">
-            {DataEducation.Code.map((item) => (
-                <EducationItem key={item.id}logo={iconObj[item.icon]} data={item} />
-            ))}
-          </Stack>
-        </div>
+        
+       
         <div className="education__area">
           <h5>
             <RiTranslate />

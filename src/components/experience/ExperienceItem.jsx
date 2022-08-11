@@ -1,5 +1,4 @@
 import React from "react";
-import Chip from "@mui/material/Chip";
 import Stack from "@mui/material/Stack";
 import ModelTrainingIcon from '@mui/icons-material/ModelTraining';
 import MuiAccordion from "@mui/material/Accordion";
@@ -101,7 +100,7 @@ function ExperienceItem(props) {
       <h3>{props.date}</h3>
       <Stack direction="row" spacing={2}>
         {props.tech.map((technology, index) => (
-          <h3>{techObj[technology]}</h3>
+          <h3 key={index}>{techObj[technology]}</h3>
         ))}
       </Stack>
       <Accordion>

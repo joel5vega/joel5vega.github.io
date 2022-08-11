@@ -1,45 +1,31 @@
 import './App.css';
-import { useState, useEffect } from 'react';
+import React, { lazy, Suspense } from 'react';
 //Importar componentes
 import Home from './components/home/Home';
-import NavBar from './components/navbar/NavBar';
-import AboutMe from './components/about/AboutMe';
-import Projects from './components/project/Projects';
-import Experience from './components/experience/Experience';
-import Education from './components/education/Education';
-import Footer from './components/footer/Footer';
-import Contact from './components/contact/Contact';
-// import {render} from 'react-dom';
+// import AboutMe from './components/about/AboutMe';
+
+// import Projects from './components/project/Projects';
+// import Experience from './components/experience/Experience';
+// import Education from './components/education/Education';
+// import Contact from './components/contact/Contact';
+// Lazy loads components when they are needed
+const Projects = lazy(() => import('./components/project/Projects'));
+const Contact = lazy(() => import('./components/contact/Contact'));
+const Experience = lazy(() => import('./components/experience/Experience'));
+const AboutMe = lazy(() => import('./components/about/AboutMe'));
+const Education = lazy(() => import('./components/education/Education'));
+const renderLoader=()=>{<p>Loading</p>}
 function App() {
-  const [activeNav, setActiveNav] = useState('#')
-  const vHeight = window.innerHeight;
-  const options = ["#",  "#experience", "#projects","#education", "#about", "#contact"];
-  const optionscel = ["#",  "#experience", "#experience", "#projects", "#projects", "#projects", "#about","#education", "#about", "#about", "#contact", "#contact", "#contact"];
-  useEffect(() => {
-    const handleScroll = (event) => {
-      const page = Math.floor(window.scrollY / vHeight);
-      if (window.innerWidth < 480) {
-        setActiveNav(optionscel[page])
-      }
-      else { setActiveNav(options[page]) }
-    }
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    }
-  }, [activeNav]);
   return (
-    <div className='body'>
+    <Suspense fallback={renderLoader}><div className='body'>
       <Home />
-      <NavBar activeNav={activeNav} setActiveNav={setActiveNav} section="#about" />
-      <Experience /> <Projects /><Education />
-
-
-      <AboutMe />
+      <Experience />
+      <Projects />
+      <Education />
       <Contact />
-      {/* <Footer /> */}
-
-    </div>
+      <AboutMe />
+    </div>  
+    </Suspense>
   );
 }
 

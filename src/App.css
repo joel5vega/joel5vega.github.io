@@ -85,6 +85,7 @@ section > h2 {
 .text-light {
   color: var(--color-light);
   font-size: small;
+  font-style: italic;
 }
 a {
   color: var(--color-primary);

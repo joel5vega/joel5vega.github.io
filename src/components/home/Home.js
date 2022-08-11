@@ -10,10 +10,10 @@ const Home = () => {
             <div className='container header__container'>
                 <img className='foto-perfil' src={Perfil} alt="Joel Vega" />
                 <h1>Joel Vega</h1>
-                <article>I'm a IT Ops Engineer & Linux Administrator </article>
+                <h2>IT Solution Architect</h2>
                 <Quote />
                 <CTA />
-                <img src="https://komarev.com/ghpvc/?username=joel5vega&label=Profile%20views&color=4db5ff" alt="joel5vega" /> 
+                <img src="https://komarev.com/ghpvc/?username=joel5vega&label=GitHub%20Profile%20views&color=4db5ff" alt="joel5vega" /> 
             </div>
         </section>
     )

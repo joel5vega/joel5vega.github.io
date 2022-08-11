@@ -120,10 +120,7 @@ iframe[seamless] {
   display: block;
 }
 .logo{
-  max-width: 3rem;
-  max-height: 2rem;
+  max-width: 10rem;
+  max-height: 6rem;
   padding: 0.5rem;
-  justify-self: center;
-  background-color: white;
-  border-radius: 0.6rem;
 }

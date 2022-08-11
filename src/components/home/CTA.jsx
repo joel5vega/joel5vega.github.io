@@ -6,7 +6,7 @@ const CTA = () => {
       <a href="#contact">
         <div className="btn btn-primary"> Let's talk</div>
       </a>
-      <a href="https://docs.google.com/document/d/1LFXu_uwxMCWK_VshW84e0mHykPju__Sk/edit?usp=sharing&ouid=106673194966111966130&rtpof=true&sd=true">
+      <a href="https://docs.google.com/document/d/1fUvKIUPGGWy7hRa_fw7o-0-6YLH9ikyP7XIvQItHRAE/edit?usp=sharing">
         <div className="btn">CV</div>
       </a>
     </div>

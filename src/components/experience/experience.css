@@ -1,7 +1,23 @@
 .experience__container {
-  display: grid;
-  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
   grid-template-columns: 1fr;
+}
+.experience__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 auto;
+  border: 1px solid transparent;
+  transition: var(--transition);
+  background: var(--color-bg);
+  border-radius: 1rem;
+  align-items: center;
+  width: fit-content;
+  padding: 0.5rem;
 }
 .icon{
   max-height: 45px;
@@ -56,8 +72,8 @@
 /*Media queries big screens*/
 @media screen and (min-width: 1024px) {
   .experience__container {
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 0.5rem 0.5rem;
+    display: flex;
+    flex-direction: row;
   }
 
 .experience__container > div {

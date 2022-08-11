@@ -82,10 +82,32 @@
 .quote p{
   font-size: 0.8rem;
 }
-.redes{
-  padding:1rem;
+.redes-ok{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  /* flex-wrap: wrap; */
+  gap:1rem;
+  justify-content: center;
+  /* padding:1rem; */
   margin:0;
-  font-size: large;
+  font-size: 2.5rem;
+  max-height: fit-content;
+}
+.redes-ok a{
+  /* color: var(--color-white); */
+  text-decoration: none;
+  max-height: 2rem;
+}
+.redes-no{
+  display: flex;
+  width: 100%;
+  max-height: fit-content;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* padding:1rem; */
+  margin:0;
+  font-size: 1rem;
 }
 
 .badges{

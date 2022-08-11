@@ -68,7 +68,7 @@ const projImg = {
 }
 const Proyecto = (props) => {
     return (
-        <Card variant="outlined" sx={{ width: 360, background: "var(--fondo)", border: "1px solid var(--color-primary)", borderRadius: "1rem" }}>
+        <Card variant="outlined" sx={{ display:"flex", flexDirection:"column",alignItems:"center",flexWrap:"wrap",width: 360, background: "var(--fondo)", border: "1px solid var(--color-primary)", borderRadius: "1rem" }}>
             <CardActionArea>
                 <div className="proyecto__img">
                     {projImg[props.img]}

@@ -17,7 +17,7 @@
   flex-wrap: wrap;
   align-items: center;
   border: 2px solid var(--color-primary);
-  max-width: 256px;
+  max-width: 360px;
   border-radius: 1rem;
 }
 .faceta h5{

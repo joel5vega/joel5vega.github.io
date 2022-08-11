@@ -9,9 +9,9 @@ import LogoShalom from "../../assets/logo/logo-shalom.png";
 import ExperienceItem from "./ExperienceItem";
 import DataExperience from "./DataExperience";
 const LogoObj={"Quantum":LogoQTM,"AcceptGO":LogoAcceptGO,"Shalom":LogoShalom};
-const Experience = () => {
+const Experience = (props) => {
   return (
-    <section id="experience">
+    <section  id="experience">
       <h1>My experience</h1>
       <div className="container experience__container">
         {DataExperience.map((experience, index) => (

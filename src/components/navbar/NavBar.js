@@ -11,7 +11,7 @@ const NavBar = (props) => {
   // const setActiveNav =props.setActiveNav;
   const vHeight = window.innerHeight;
   const options = ["#", "#experience", "#projects", "#education", "#contact", "#about"];
-  const optionscel = ["#", "#experience", "#projects", "#projects", "#projects", "#education", "#contact", "#about", "#contact", "#contact"];
+  const optionscel = ["#", "#experience", "#projects", "#projects", "#projects", "#education", "#contact", "#about", "#about", "#about"];
 
   useEffect(() => {
     const handleScroll = (event) => {

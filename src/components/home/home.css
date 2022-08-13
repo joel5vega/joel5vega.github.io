@@ -83,9 +83,21 @@
   font-size: 0.8rem;
 }
 .redes{
-  padding:1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:0rem;
+}
+.redes-ok{
+  display: flex;
+  gap:1rem;
+  font-size: 2rem;
+}
+.redes-ss{
+  display: flex;
+  gap:0.5rem;
   margin:0;
-  font-size: large;
+  font-size: 1rem;
 }
 
 .badges{

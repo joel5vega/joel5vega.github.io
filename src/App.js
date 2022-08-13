@@ -3,6 +3,7 @@ import React, { lazy, Suspense } from 'react';
 //Importar componentes
 import Home from './components/home/Home';
 import Loader from './components/Loader/Loader';
+import NavBar from './components/navbar/NavBar'
 // Lazy loads components when they are needed
 const Projects = lazy(() => import('./components/project/Projects'));
 const Contact = lazy(() => import('./components/contact/Contact'));
@@ -14,6 +15,7 @@ function App() {
   return (
     <Suspense fallback={<Loader/>}>
       <div className='body'>
+      <NavBar />
       <Home />
       <Experience />
       <Projects />

@@ -11,6 +11,7 @@
   justify-content: center;
   text-align: center;
 }
+
 .contact__item {
   border: 2px solid var(--color-primary);
   border-radius: 1rem;
@@ -42,14 +43,33 @@
   gap: 1rem;
   padding: 1rem;
 }
+.input{
+  width: 50%;
+  height: 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-white);
+  background-color: var(--color-white);
+  color: var(--color-black);
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
 .form input {
+  border: 1px solid var(--color-white);
   border: 1px solid var(--color-primary);
   background: transparent;
   padding: 0.5rem;
+<<<<<<< HEAD
   color: var(--color-white);
   /* max-width: 80%; */
   min-width: 50%;
   border-radius: 1rem;
+=======
+  color: var(--color-black);
+  width: 50%;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+>>>>>>> a9e8d3ffc5f7580b853d38d8d46da9f1834f2344
 }
 .form textarea {
   resize: none;
@@ -62,6 +82,7 @@
   min-height: 4rem;
   border-radius: 1rem;
 }
+<<<<<<< HEAD
 .form input.boton {
   background: var(--color-primary);
   color: var(--color-bg);
@@ -69,6 +90,11 @@
 .form input.boton:hover {
   background: var(--color-bg);
   color: var(--color-primary);
+=======
+.form .boton {
+  background: var(--color-primary);
+  color:var(--color-bg);
+>>>>>>> a9e8d3ffc5f7580b853d38d8d46da9f1834f2344
 }
 @media screen and (min-width: 600px) {
   .contact__container {

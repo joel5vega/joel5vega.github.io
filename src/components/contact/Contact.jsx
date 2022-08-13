@@ -32,9 +32,12 @@ function Contact() {
       <div className="contact__container">
         
           <form className="form" ref={form} onSubmit={sendEmail}>
+<<<<<<< HEAD
             {/* <input placeholder="Name" type="text" name="name" /> */}
+=======
+>>>>>>> a9e8d3ffc5f7580b853d38d8d46da9f1834f2344
             <input placeholder="email" type="email" name="mail" required />
-            <textarea
+            <textarea className="input"
               type="textarea"
               placeholder="Message here"
               name="message"

@@ -41,7 +41,6 @@
   /* padding: 1rem; */
 }
 
-
 /*QUote*/
 .quote {
   padding: 1rem;
@@ -51,91 +50,70 @@
   /* font-size: 1.5rem; */
   font-style: italic;
   font-weight: 300;
-  color: var(--color-white  );
+  color: var(--color-white);
   text-align: center;
   /* margin-top: 2rem; */
 }
-.badges{
+.badges {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-left: 2rem;
-  }
+}
 
 /*    MEDIA Queries (medium)*/
 @media screen and (max-width: 1024px) {
   .container {
     /* background-color: red; */
   }
-  header{height: 100vh;}
+  header {
+    height: 100vh;
+  }
 }
 /*    MEDIA Queries (small)*/
 @media screen and (max-width: 600px) {
-  header{
-      height: 100vh;
+  header {
+    height: 100vh;
   }
-.quote{
-  /* padding: 1rem; */
-  padding: 0;
-  font-size: 0.75rem;
-}
-.quote p{
-  font-size: 0.8rem;
-}
-<<<<<<< HEAD
-.redes{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap:0rem;
-}
-.redes-ok{
-  display: flex;
-  gap:1rem;
-  font-size: 2rem;
-}
-.redes-ss{
-  display: flex;
-  gap:0.5rem;
-=======
-.redes-ok{
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  /* flex-wrap: wrap; */
-  gap:1rem;
-  justify-content: center;
-  /* padding:1rem; */
-  margin:0;
-  font-size: 2.5rem;
-  max-height: fit-content;
-}
-.redes-ok a{
-  /* color: var(--color-white); */
-  text-decoration: none;
-  max-height: 2rem;
-}
-.redes-no{
-  display: flex;
-  width: 100%;
-  max-height: fit-content;
-  flex-direction: row;
-  flex-wrap: wrap;
-  /* padding:1rem; */
->>>>>>> a9e8d3ffc5f7580b853d38d8d46da9f1834f2344
-  margin:0;
-  font-size: 1rem;
-}
+  .quote {
+    /* padding: 1rem; */
+    padding: 0;
+    font-size: 0.75rem;
+  }
+  .quote p {
+    font-size: 0.8rem;
+  }
+  .redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0rem;
+  }
+  .redes-ok {
+    display: flex;
+    gap: 1rem;
+    font-size: 2rem;
+    height: 2rem;
+  }
+  .redes-ss {
+    display: flex;
+    gap: 0.5rem;
+  }
+  .redes-ok a:hover {
+    color: var(--color-white);
+  }
+  .redes-ss a:hover {
+    color: var(--color-white);
+  }
+  .badges {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1.5rem;
+  }
 
-.badges{
-display: flex;
-flex-direction: column;
-align-items: center;
-margin-left: 1.5rem;
-}
-
-.header__socials, .scroll__down{
+  .header__socials,
+  .scroll__down {
     display: none;
   }
 }
-

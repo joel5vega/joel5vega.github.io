@@ -17,7 +17,6 @@
   flex-wrap: wrap;
   align-items: center;
   border: 2px solid var(--color-primary);
-  max-width: 360px;
   border-radius: 1rem;
 }
 .faceta h5{
@@ -38,7 +37,7 @@
   height: auto;
   min-height: 180px;
   max-height: 240px;
-  max-width:360px;
+  /* max-width:360px; */
   padding: 1rem;
   /* width: 500px; */
   border-radius: 1rem;
@@ -72,7 +71,7 @@
 }
 .about__me-img {
   border-radius: 3rem;
-  max-width: 60%;
+  /* max-width: 60%; */
 }
 .about__me-img:hover {
   transform: rotate(-10deg);

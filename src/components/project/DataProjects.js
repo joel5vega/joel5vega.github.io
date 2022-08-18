@@ -9,7 +9,7 @@ const DataProjects =[{
     "title": "Spiritual Gifts Test",
     "img": "dones",
     "description": "Test of spiritual gifts. Answer questions and find out with spiritual gift is more prominent.",
-    "link": "https://joelvega.me/dones/",
+    "link": "https://joelvega.me/dones?utm_source=portfolio?utm_medium=projects&utm_campaign=dones",
     "repo": "https://github.com/joel5vega/dones",
     "tech":[ "react"],
 },
@@ -19,6 +19,14 @@ const DataProjects =[{
     "description": "Toolbox of AcceptGO.  Automated program that helps you prepare for jobs and scholarships and excel professionally.",
     "link": "https://joelvega.me/acceptgo/",
     "repo": "https://github.com/joel5vega/acceptgo",
+    "tech":[ "react"],
+},
+{
+    "title": "Churchs Geolocaliztion",
+    "img": "gps",
+    "description": "GPS and main data from churchs in La Paz.",
+    // "link": "https://joelvega.me/fletsy/",
+    "link": "https://www.appsheet.com/start/da299b87-583b-442f-a051-3376a4346ebc",
     "tech":[ "react"],
 },
 {

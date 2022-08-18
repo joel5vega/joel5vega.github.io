@@ -14,10 +14,10 @@ const DataExperience = [
     {
         "title": "Solution Architect", "company": "AcceptGO", "date": "2022",
         "description": [
-            "Automated SMS to new leads.",
+            "Reduced the time of response to new leads by 97% through integrating applications (Zapier, Twilio, and WordPress).",
             "Integration between Calendly and GSheets through Zapier, to centralize Database.",
-            "Implementation of Google Analytics in landing page, to analyze traffic.",
-            "Migrating the business logic to new technology in react.",
+            "Implemented web traffic analysis through Google Analytics and generated reports for decision-makers.",
+            "Migrating the business logic to new technology in React JS.",
         ]
         ,
         "tech": ["Automation","Twilio", "Zapier", "Google Analytics", "React", "Google Sheets", "Whatsapp"],

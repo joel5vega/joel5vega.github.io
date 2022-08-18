@@ -36,9 +36,12 @@ const DataEducation = {
         { "id": 14, "name": "MySQL", "icon": "mysql", "link": "https://drive.google.com/file/d/1J0mYolwnih9m16ah-TFa0Xy5N-jXFzkk/preview" },
         { "id": 21, "name": "Containers", "icon":"container","link": "https://drive.google.com/file/d/1jRXvOe8wlgvd5eQa-xKBGKNbZq_vHYv6/preview" },
         { "id": 16, "name": "Telecom", "icon": "telecom", "link": "https://drive.google.com/file/d/17GoxFKHlbbnEWhV605zqaQq_vZ6gfjlP/preview" },
+        
         { "id": 10, "name": "Kubernetes", "icon": "kubernetes", }, 
         {"id": 11, "name": "Ansible", "icon": "ansible",},
         { "id": 15, "name": "Rancher", "icon": "rancher" },
+        { "id": 24, "name": "DevOps", "icon": "devops","link":"https://drive.google.com/file/d/1q-fHjVdt_TrcNKfhMOEmsPNV_1Y-reR2/preview" },
+
     ],
     "Code": [
         { "id": 17, "name": "Python", "icon": "python", "link": "https://drive.google.com/file/d/1-PwRa10MkAPWmAkXqJTsSfXoydmqxAyK/preview" }, { "id": 18, "name": "PHP", "icon": "php" }, { "id": 19, "name": "JavaScript", "icon": "js" },

@@ -9,6 +9,7 @@ import Fletsy from "../../assets/projects/fletsy.gif";
 import Dones from "../../assets/projects/testDones.png";
 import SIHE from "../../assets/projects/horarios-crear.png";
 import AcceptGO from "../../assets/projects/acceptgo.png"
+import GPS from "../../assets/projects/gps-iglesias.png";
 import {
     SiSuse,
     SiRedhat,
@@ -65,6 +66,7 @@ const projImg = {
     dones: <img src={Dones} className="photo" alt="Dones" />,
     acceptgo: <img src={AcceptGO} className="photo" alt="AcceptGO" />,
     fletsy: <img src={Fletsy} className="photo" alt="Fletsy" />,
+    gps: <img src={GPS} className="photo" alt="GPS" />
 }
 const Proyecto = (props) => {
     return (

@@ -34,6 +34,7 @@ import DataEducation from "./DataEducation";
 import { MdOutlineSettingsSystemDaydream } from "react-icons/md";
 import {TiSortAlphabeticallyOutline} from "react-icons/ti";
 import {DiLaravel} from "react-icons/di";
+import DevOps from "../../assets/icons/devops-white.png";
 let iconObj = {
   linux: <FaLinux />,
   laravel: <FaLaravel />,
@@ -64,6 +65,7 @@ let iconObj = {
   chinese: <HiTranslate />,
   spanish: <TiSortAlphabeticallyOutline />,
   development: <GrCodepen />,
+  devops:<img className="icon"src={DevOps} alt="DevOps" />,
 };
 function Education() {
   return (

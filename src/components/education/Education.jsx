@@ -29,7 +29,7 @@ import  {HiTranslate} from "react-icons/hi";
 import { DiGoogleCloudPlatform, DiPhp } from "react-icons/di";
 import { GrFirewall ,GrCodepen} from "react-icons/gr";
 import { FaCode ,FaLaravel} from "react-icons/fa";
-import { RiTranslate } from "react-icons/ri";
+import { RiTranslate ,RiGitlabLine} from "react-icons/ri";
 import DataEducation from "./DataEducation";
 import { MdOutlineSettingsSystemDaydream } from "react-icons/md";
 import {TiSortAlphabeticallyOutline} from "react-icons/ti";
@@ -50,6 +50,7 @@ let iconObj = {
   cisco: <SiCisco />,
   mysql: <SiMysql />,
   kubernetes: <SiKubernetes />,
+  gitlab: <RiGitlabLine />,
   container:<SiVirtualbox />, 
   docker: <SiDocker />,
   rancher: <SiRancher />,

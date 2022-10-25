@@ -31,7 +31,7 @@ const DataExperience = [
             "Preparing chess strategies and tactics, using the stockfish engine for a thoughtful review of their own games.",
         ]
         ,
-        "tech": ["Chess","Analysis", "Logic", "Teach", "Lead",  "Train"],
+        "tech": ["Chess", "Logic", "Teach", "Lead",  "Train"],
         "link": "http://cec-shalom.com"
     }
 

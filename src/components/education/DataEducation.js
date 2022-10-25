@@ -16,7 +16,7 @@ const DataEducation = {
         }
     ],
     "Cloud": [
-        { "id": 6, "name": "AWS", "icon": "aws", "link": "https://drive.google.com/file/d/1JD_Dk3Yv6iHUge8DQo00r3zfJ9t0H_h5/preview#toolbar=0&navpanes=0" },
+        { "id": 6, "name": "AWS", "icon": "aws", "link": "https://drive.google.com/file/d/1t38Uxw3imU04qYufqbeRi9l760ihBKjF/preview" },
         {
             "id": 30, "name": "Azure", "icon": "azure", "link": "https://drive.google.com/file/d/1BDiacHUciFhrFnmq1eYqsCnyvQ9H_u5Y/preview",
         },
@@ -37,10 +37,11 @@ const DataEducation = {
         { "id": 21, "name": "Containers", "icon":"container","link": "https://drive.google.com/file/d/1jRXvOe8wlgvd5eQa-xKBGKNbZq_vHYv6/preview" },
         { "id": 16, "name": "Telecom", "icon": "telecom", "link": "https://drive.google.com/file/d/17GoxFKHlbbnEWhV605zqaQq_vZ6gfjlP/preview" },
         
-        { "id": 10, "name": "Kubernetes", "icon": "kubernetes", }, 
+        { "id": 10, "name": "Kubernetes", "icon": "kubernetes", "link":"https://drive.google.com/file/d/1Cib4RwoRFptVLSWNHUdzI5yYwSpiU2my/preview"}, 
         {"id": 11, "name": "Ansible", "icon": "ansible",},
         { "id": 15, "name": "Rancher", "icon": "rancher" },
         { "id": 24, "name": "DevOps", "icon": "devops","link":"https://drive.google.com/file/d/1q-fHjVdt_TrcNKfhMOEmsPNV_1Y-reR2/preview" },
+        { "id": 25, "name": "Gitlab", "icon": "gitlab", "link": "https://drive.google.com/file/d/1tagW3TVa1R3u6c4fjJA2onbf5R6vWRaa/preview" },
 
     ],
     "Code": [

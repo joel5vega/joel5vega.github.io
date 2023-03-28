@@ -1,6 +1,18 @@
 const DataExperience = [
     {
-        "title": "Linux Infrastructure Engineer", "company": "Quantum", "date": "2017 - Present",
+        "title": "DevOps Engineer", "company": "UnoSquare", "date": "2023 - Present",
+        "description": [
+            "Administer pipelines for continuous integration and delivery of software products with Azure DevOps",
+            "Configure system settings and security policies in IIS web server",
+            "Monitor RabbitMQ message broker for performance and reliability",
+            "Work in a digital bank environment that requires high availability and scalability",
+        ]
+        ,
+        "tech": ["Azure DevOps", "RabbitMQ", "IIS", "SSIS Packages", "Kubernetes", "Server", "SQL Server"],
+        "link": "https://www.unosquare.com/about-us/"
+    },
+    {
+        "title": "Site Reliability Engineer", "company": "Quantum", "date": "2017 - Present",
         "description": [
             "Automated and reduced the log analysis by 80% through Bash scripting to focus proactively on preventing business' services interruption and customer needs",
             "Presented monthly reports regarding infrastructure performance and mitigation plans to reduce downtime to technology managers",

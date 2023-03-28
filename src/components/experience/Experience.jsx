@@ -6,9 +6,10 @@ import "./experience.css";
 import LogoQTM from "../../assets/logo/logo-quantum-white.png";
 import LogoAcceptGO from "../../assets/logo/logo-acceptgo-white.png";
 import LogoShalom from "../../assets/logo/logo-shalom.png";
+import LogoUSQ from "../../assets/logo/logo-usq.png";
 import ExperienceItem from "./ExperienceItem";
 import DataExperience from "./DataExperience";
-const LogoObj={"Quantum":LogoQTM,"AcceptGO":LogoAcceptGO,"Shalom":LogoShalom};
+const LogoObj={"Quantum":LogoQTM,"AcceptGO":LogoAcceptGO,"Shalom":LogoShalom,"UnoSquare":LogoUSQ};
 const Experience = (props) => {
   return (
     <section  id="experience">

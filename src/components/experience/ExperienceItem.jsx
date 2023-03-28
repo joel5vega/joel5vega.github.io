@@ -22,7 +22,7 @@ import {
   SiGooglesheets,
   SiServerfault,
   SiMysql,
-  SiGnubash
+  SiGnubash,SiAzuredevops,SiRabbitmq,SiKubernetes,SiMicrosoftsqlserver
 } from "react-icons/si";
 import { DiRedhat } from "react-icons/di";
 const techObj = {
@@ -34,6 +34,10 @@ const techObj = {
   Twilio: <SiTwilio />,
   Zapier: <SiZapier />,
   "Google Analytics": <SiGoogleanalytics />,
+  "Azure DevOps": <SiAzuredevops />,
+  "SQL Server": <SiMicrosoftsqlserver />,
+  RabbitMQ:<SiRabbitmq />,
+  Kubernetes:<SiKubernetes />,
   React: <SiReact />,
   "Google Sheets": <SiGooglesheets />,
   "Server Fault": <SiServerfault />,

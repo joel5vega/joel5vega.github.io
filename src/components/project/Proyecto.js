@@ -6,7 +6,8 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions, Stack } from '@mui/material';
 import Fletsy from "../../assets/projects/fletsy.gif";
-import Dones from "../../assets/projects/testDones.png";
+import Dones from "../../assets/projects/testDeDones.webp";
+
 import SIHE from "../../assets/projects/horarios-crear.png";
 import AcceptGO from "../../assets/projects/acceptgo.png"
 import GPS from "../../assets/projects/gps-iglesias.png";

@@ -8,7 +8,7 @@ import { Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis } from 'r
 import diario from "./DataWeek";
 import categoria from "./DataSumMonth";
 ///
-const Key = "B632wU543wwlr1Aw96D0Jie8Xa806KxiKruYi9_4";
+const Key = "xx";
 const rescuetimeURL = "https://www.rescuetime.com/anapi/";
 const dailyURL = rescuetimeURL + "daily_summary_feed?key=" + Key + "&format=json&restrict_source_type=computers";
 ///statico

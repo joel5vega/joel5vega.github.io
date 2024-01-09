@@ -24,7 +24,7 @@ const DataEducation = {
             "id": 7,
             "name": "Google Cloud", "icon": "gcp", "description": "Google Cloud Fundamentals on Coursera", "link": "https://drive.google.com/file/d/1L7q0EMYs5jCEOrc00y2vbCS76JFrrEID/preview"
         },
-
+        
     ],
     "Infra": [
         {"id": 9,"name": "Docker", "icon": "docker", "link": "https://drive.google.com/file/d/1Q1-lQUGY4L3Z1ls95RW3zAa9NugexPYQ/preview"}, 
@@ -32,7 +32,7 @@ const DataEducation = {
         { "id": 13, "name": "CCNA", "icon": "cisco", "link": "https://drive.google.com/file/d/15I_L_2OKp8zZsz07Dfhk6_XD4YabXkDt/preview" }, 
         { "id": 14, "name": "MySQL", "icon": "mysql", "link": "https://drive.google.com/file/d/1K4LPTn219IJZqNK_SqMAa5vmB-sqiRJQ/preview" },
         { "id": 21, "name": "Containers", "icon":"container","link": "https://drive.google.com/file/d/1eB4o4VJ3NFqif0GGeyZtKwkl4DVdlEwD/preview" },
-        { "id": 10, "name": "Kubernetes", "icon": "kubernetes", "link":"https://drive.google.com/file/d/1j5nsmAbB0DfNkCFkZDxsp3JRU1EbWGKI/preview"}, 
+        { "id": 10, "name": "Kubernetes", "icon": "kubernetes", "link":"https://drive.google.com/file/d/1qvkPL0MZkKoHCvX5yWUK4-J0tuieqtSg/view"}, 
         {"id": 11, "name": "Ansible", "icon": "ansible",},
         { "id": 24, "name": "DevOps", "icon": "devops","link":"https://drive.google.com/file/d/1xoyuqQzB2v1ipwoVm1HN-5aMqeJzQVQP/preview" },
         { "id": 25, "name": "Gitlab", "icon": "gitlab", "link": "https://drive.google.com/file/d/1UmdLHpUIAS1Ioe98mM3VtBz5nr45jSKq/preview" },

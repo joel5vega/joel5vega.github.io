@@ -16,7 +16,7 @@
 </br>
 - 🤝 I’m looking for help with Data Engineering
 </br>
-- 👨‍💻 All of my projects are available at https://joelvega.me
+- 👨‍💻 All of my projects are available at https://joel5vega.github.io
 </br>
 - 💬 Ask me about Linux, ITOps, Education, Leadership
 </br>

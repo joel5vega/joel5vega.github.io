@@ -10,7 +10,7 @@ const Home = () => {
             <div className='container header__container'>
                 <img className='foto-perfil' src={Perfil} alt="Joel Vega" />
                 <h1>Joel Vega</h1>
-                <h2>DevOpsEngineer</h2>
+                <h2>DevOpsEngineer @AxosBank</h2>
                 <Quote />
                 <CTA />
                 <Views />

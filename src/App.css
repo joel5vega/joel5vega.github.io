@@ -1,36 +1,67 @@
+/* ===================================
+   RESET & BASE STYLES (Mobile First)
+   =================================== */
 * {
   margin: 0;
   padding: 0;
   border: 0;
   outline: 0;
-  box-sizing: 0;
+  box-sizing: border-box; /* Fixed: was 0 */
   list-style: none;
   text-decoration: none;
-  /* background-color: var(--color-bg); */
 }
+
+/* ===================================
+   CSS VARIABLES
+   =================================== */
 :root {
+  /* Brand Colors */
   --negro: #000000;
   --normal: #306fb8;
   --claro: #a5cfea;
   --blanco: #ffffff;
 
+  /* Theme Colors */
   --color-bg: #000000;
-  --color-bg-variant: rgba(0,0,0,0,04);
+  --color-bg-variant: rgba(0, 0, 0, 0.04); /* Fixed: was 0,04 */
   --color-primary: #4db5ff;
   --color-primary-variant: #ffffff;
   --color-white: #ffffff;
   --color-light: #ffffff;
 
+  /* Animation */
   --transition: all 400ms ease;
 
-  --container-width-lg: 100vw;
-  --container-width-md: 100vw;
-  /* --container-width-sm: 80%; */
+  /* Container Widths - Mobile First */
+  --container-width-sm: 95%; /* Mobile base */
+  --container-width-md: 90%; /* Tablet */
+  --container-width-lg: 85%; /* Desktop */
+  --container-max-width: 1200px;
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 3rem;
+  --spacing-xl: 4rem;
+
+  /* Typography - Mobile First */
+  --font-size-h1: 2rem;
+  --font-size-h2: 1.5rem;
+  --font-size-h3: 1.25rem;
+  --font-size-body: 1rem;
+  --font-size-small: 0.875rem;
 }
+
+/* ===================================
+   BASE ELEMENTS
+   =================================== */
 html {
   scroll-behavior: smooth;
-  margin:0;
+  margin: 0;
+  font-size: 16px; /* Base font size for rem calculations */
 }
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -40,100 +71,277 @@ html {
   color: var(--color-white);
   line-height: 1.7;
   font-family: "Red Hat Display", sans-serif;
-  position: absolute;
-  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
 }
 
-/* GENERAR STYLES*/
+/* ===================================
+   LAYOUT CONTAINERS
+   =================================== */
 .container {
-  width: var(--container-width-lg);
+  width: var(--container-width-sm);
+  max-width: var(--container-max-width);
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
+/* ===================================
+   TYPOGRAPHY - Mobile First
+   =================================== */
+h1, h2, h3, h4, h5 {
   font-weight: 500;
   text-align: center;
-  color:var(--color-primary-variant);
-}
-h1 {
-  font-size: 2.5rem;
+  color: var(--color-primary-variant);
   line-height: 1.2;
-  color:var(--color-primary);
-  padding: 1rem;
 }
+
+h1 {
+  font-size: var(--font-size-h1);
+  color: var(--color-primary);
+  padding: var(--spacing-sm);
+  margin-bottom: var(--spacing-sm);
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  margin-bottom: var(--spacing-sm);
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+}
+
+/* ===================================
+   SECTIONS
+   =================================== */
 section {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: var(--spacing-md) 0;
 }
+
 section > h2,
 section > h5 {
   text-align: center;
   color: var(--color-light);
-  justify-content: center;
-
 }
+
 section > h2 {
   color: var(--color-primary);
-  margin-bottom: 1rem;
+  margin-bottom: var(--spacing-sm);
 }
+
+/* ===================================
+   TEXT UTILITIES
+   =================================== */
 .text-light {
   color: var(--color-light);
-  font-size: small;
+  font-size: var(--font-size-small);
   font-style: italic;
 }
+
+/* ===================================
+   LINKS
+   =================================== */
 a {
   color: var(--color-primary);
   transition: var(--transition);
+  /* Minimum tap target size for mobile */
+  min-height: 44px;
+  min-width: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
-a:hover {
-  color: car(--color-white);
+
+a:hover,
+a:focus {
+  color: var(--color-white); /* Fixed: was car(--color-white) */
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
 }
+
+/* ===================================
+   BUTTONS - Mobile Optimized
+   =================================== */
 .btn {
-  width: max-content;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   color: var(--color-primary);
-  padding: 0.75rem 1.2rem;
+  padding: 0.875rem 1.5rem; /* Larger touch target */
   border-radius: 0.4rem;
   cursor: pointer;
   border: 1px solid var(--color-primary);
   transition: var(--transition);
+  font-size: var(--font-size-body);
+  font-weight: 500;
+  /* Minimum tap target size */
+  min-height: 44px;
+  min-width: 120px;
+  text-align: center;
+  white-space: nowrap;
 }
-.btn:hover {
+
+.btn:hover,
+.btn:focus {
   background-color: var(--color-white);
   color: var(--color-bg);
   border-color: transparent;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(77, 181, 255, 0.3);
 }
+
+.btn:active {
+  transform: translateY(0);
+}
+
 .btn-primary {
   background-color: var(--color-primary);
   color: var(--color-bg);
 }
+
+/* ===================================
+   IMAGES - Responsive
+   =================================== */
 .imagen {
   display: block;
-  width: 90%;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
   object-fit: cover;
+  margin: 0 auto;
 }
 
-.redes{
+/* ===================================
+   SOCIAL MEDIA / REDES
+   =================================== */
+.redes {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-md);
+  padding: var(--spacing-sm);
 }
 
-/*    MEDIA Queries (medium)*/
-@media screen and (max-width: 1024px) {
+.redes > * {
+  /* Ensure touch-friendly sizing */
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* ===================================
+   MEDIA QUERIES - Mobile First Approach
+   =================================== */
+
+/* Tablet and up (min-width approach) */
+@media screen and (min-width: 600px) {
+  :root {
+    --font-size-h1: 2.25rem;
+    --font-size-h2: 1.75rem;
+    --font-size-h3: 1.5rem;
+  }
+
+  .imagen {
+    width: 90%;
+  }
+
+  section {
+    padding: var(--spacing-lg) 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .container {
     width: var(--container-width-md);
-  }
-  section {
-    /* margin-top: 6rem; */
+    padding: 0 2rem;
   }
 
+  h1 {
+    padding: var(--spacing-md);
+  }
+
+  .btn {
+    padding: 0.75rem 1.2rem;
+  }
 }
-/*    MEDIA Queries (small)*/
+
+/* Desktop (1024px and up) */
+@media screen and (min-width: 1024px) {
+  :root {
+    --font-size-h1: 2.5rem;
+    --font-size-h2: 2rem;
+    --font-size-h3: 1.75rem;
+  }
+
+  .container {
+    width: var(--container-width-lg);
+  }
+
+  section {
+    padding: var(--spacing-xl) 0;
+  }
+
+  .imagen {
+    width: 80%;
+  }
+}
+
+/* Large Desktop (1440px and up) */
+@media screen and (min-width: 1440px) {
+  :root {
+    --font-size-h1: 3rem;
+    --font-size-h2: 2.25rem;
+  }
+
+  .container {
+    width: 80%;
+  }
+}
+
+/* ===================================
+   ACCESSIBILITY IMPROVEMENTS
+   =================================== */
+
+/* Focus visible for keyboard navigation */
+*:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Reduced motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  :root {
+    --color-primary: #ffffff;
+    --color-bg: #000000;
+  }
+}
+
+/* ===================================
+   PRINT STYLES
+   =================================== */
+@media print {
+  .body {
+    background-color: white;
+    color: black;
+  }
+  
+  section {
+    min-height: auto;
+    page-break-inside: avoid;
+  }
+}

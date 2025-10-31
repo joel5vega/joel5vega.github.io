@@ -6,11 +6,13 @@ import DataProjects from "./DataProjects";
 
 const Projects = () => {
     return (
-        <section id="projects" >
-            <h1>Projects</h1>
-            <div className="proyectos__container">
+        <section id="projects" className="projects-section">
+            <div className="container">
+            <h2>Projects</h2>
+            <div className="projects-container">
                 {DataProjects.map((proyecto, index) => (
                     <Proyecto key={index}  {...proyecto} />))}
+            </div>
             </div>
         </section>
     )
